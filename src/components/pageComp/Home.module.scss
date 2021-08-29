@@ -1,0 +1,19 @@
+.wrapper {
+  padding: 0 calc((100% - 1200px) / 2);
+  min-height: 100vh;
+  padding-top: 150px;
+
+  .headlineWrap {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+
+    & p {
+      padding: 50px calc((100% - 600px) / 2);
+      font-size: 1.3rem;
+      line-height: 1.9;
+      font-weight: normal;
+      color: #0f2137;
+    }
+  }
+}
