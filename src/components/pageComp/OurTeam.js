@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 import styles from "./OurTeam.module.scss";
 import { OurTeams } from "./DB/OurTeams";
@@ -17,7 +18,7 @@ const OurTeam = () => {
           {OurTeams.map((item) => (
             <div className={styles.card} key={item.id}>
               <div className={styles.profilePic}>
-                <img src={item.src} alt={item.alt} />
+                <Image src={item.src} alt={item.alt} width={200} height={200} />
               </div>
 
               <div className={styles.textWrap}>

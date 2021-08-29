@@ -13,7 +13,12 @@ const Home = () => {
             Gambling Addiction.
           </p>
         </div>
-        <img src="/images/hero.png" alt="John Hartson Recovery Hero Image" />
+        <Image
+          src="/images/hero.png"
+          alt="John Hartson Recovery Hero Image"
+          width={1920}
+          height={1080}
+        />
       </div>
     </section>
   );

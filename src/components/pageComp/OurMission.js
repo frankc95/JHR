@@ -18,7 +18,12 @@ const OurMission = () => {
           {AskingWhy.map((item) => (
             <div className={styles.innerGrid} key={item.id}>
               <div className={styles.graphic}>
-                <img src={item.src} alt={item.alt} />
+                <Image
+                  src={item.src}
+                  alt={item.alt}
+                  width={item.width}
+                  height={item.height}
+                />
               </div>
               <div className={styles.textWrap}>
                 <h2>{item.title}</h2>
@@ -32,13 +37,18 @@ const OurMission = () => {
         <div className={styles.grid}>
           <div className={styles.innerGrid}>
             <div className={styles.videoModal}>
-              <img src="/images/Tony.png" alt="Tony Marini Image Video Modal" />
+              <Image
+                src="/images/Tony.png"
+                alt="Tony Marini Image Video Modal"
+                width={628}
+                height={628}
+              />
               <button aria-label="Play Button">
                 <span>
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
-                    stroke-width="0"
+                    strokeWidth="0"
                     viewBox="0 0 512 512"
                     height="1em"
                     width="1em"
@@ -83,7 +93,6 @@ const OurMission = () => {
                   <Image
                     src={item.src}
                     alt={item.alt}
-                    layout="responsive"
                     width={1920}
                     height={1080}
                   />

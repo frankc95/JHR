@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 import styles from "./Testimonials.module.scss";
 import { Testimonial } from "./DB/Testimonial";
@@ -18,7 +19,12 @@ const Testimonials = () => {
               <h6>{item.title}</h6>
               <p>{item.body}</p>
               <div className={styles.innerCard}>
-                <img src={item.person.src} alt={item.person.alt} />
+                <Image
+                  src={item.person.src}
+                  alt={item.person.alt}
+                  width={60}
+                  height={60}
+                />
                 <h6>{item.person.name}</h6>
               </div>
             </div>
