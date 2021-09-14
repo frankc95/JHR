@@ -2,7 +2,7 @@ export const AskingWhy = [
   {
     id: 1,
     title: "Background",
-    body: "John Hartson, as well as being a renowned world-famous footballer, is a recovering gambling addict. He has teamed up with with Tony Marini, a Psychotherapist and expert in gambling addiction (and also are covering gambling addict himself(, to share their stories, help people recognise the problem (either within themselves or within their families or friends) and provide an avenue for those struggling with gambling to seek help and gain recovery.",
+    body: "John Hartson, as well as being a renowned, world-famous footballer, is a recovering gambling addict.  He has teamed up with Tony Marini, a Psychotherapist and gambling addiction expert, who is a recovering gambling addict himself.  Together they will share their stories, help people recognise the problem (either within themselves or within their families or friends) and provide an avenue for those struggling with gambling to seek help and gain recovery.",
     src: "/images/OurMission1.png",
     alt: "John Hartson Recovery Background Image",
     width: "994",

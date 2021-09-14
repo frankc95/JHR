@@ -7,6 +7,7 @@ export const Testimonial = [
       src: "/images/customer.png",
       alt: "Customer Profile Picture",
       name: "Anna Maria",
+      social: "@anna.m",
     },
   },
   {
@@ -17,6 +18,7 @@ export const Testimonial = [
       src: "/images/customer.png",
       alt: "Customer Profile Picture",
       name: "Denny Hilguston",
+      social: "@denny.hill",
     },
   },
   {
@@ -27,6 +29,7 @@ export const Testimonial = [
       src: "/images/customer.png",
       alt: "Customer Profile Picture",
       name: "Adam Klark",
+      social: "@klarkk",
     },
   },
 ];

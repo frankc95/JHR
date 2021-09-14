@@ -10,7 +10,7 @@ const Testimonials = () => {
       {/* Testimonials */}
       <div className={styles.headlineWrap}>
         <h5>testimonial</h5>
-        <h2>Meet Client Satisfaction</h2>
+        <h2>To Follow Client Satisfaction</h2>
       </div>
       <div className={styles.grid}>
         <div className={styles.testimonialGrid}>
@@ -25,7 +25,10 @@ const Testimonials = () => {
                   width={60}
                   height={60}
                 />
-                <h6>{item.person.name}</h6>
+                <div className="">
+                  <h6>{item.person.name}</h6>
+                  <h6>{item.person.social}</h6>
+                </div>
               </div>
             </div>
           ))}

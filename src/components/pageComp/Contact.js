@@ -27,20 +27,56 @@ const Contact = () => {
       <div className={styles.grid}>
         <div className={styles.formWrap}>
           <form method="post" onSubmit={handleSubmit}>
-            <label htmlFor="name" className={styles.formLabel}>
-              Name
-            </label>
-            <input type="text" name="name" className={styles.formInput} />
+            <div className={styles.double}>
+              <div className={styles.single}>
+                <label htmlFor="name" className={styles.formLabel}>
+                  Name <span>*</span>
+                </label>
+                <input
+                  required
+                  type="text"
+                  name="name"
+                  className={styles.formInput}
+                />
+              </div>
 
-            <label htmlFor="email" className={styles.formLabel}>
-              Email
-            </label>
-            <input type="text" name="email" className={styles.formInput} />
+              <div className={styles.single}>
+                <label htmlFor="email" className={styles.formLabel}>
+                  Email <span>*</span>
+                </label>
+                <input
+                  required
+                  type="text"
+                  name="email"
+                  className={styles.formInput}
+                />
+              </div>
+            </div>
+
+            <div className={styles.double}>
+              <div className={styles.single}>
+                <label htmlFor="company" className={styles.formLabel}>
+                  Company
+                </label>
+                <input
+                  type="text"
+                  name="company"
+                  className={styles.formInput}
+                />
+              </div>
+
+              <div className={styles.single}>
+                <label htmlFor="phone" className={styles.formLabel}>
+                  Contact number
+                </label>
+                <input type="text" name="phone" className={styles.formInput} />
+              </div>
+            </div>
 
             <label htmlFor="name" className={styles.formLabel}>
-              Message
+              Message <span>*</span>
             </label>
-            <textarea name="message" className={styles.formInput} />
+            <textarea required name="message" className={styles.formInput} />
 
             <button>Submit</button>
           </form>

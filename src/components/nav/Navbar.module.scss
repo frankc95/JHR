@@ -1,11 +1,15 @@
+$primary-color: #6c63fe;
+
 .nav {
-  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1200px) / 2);
   z-index: 466666666666666666;
-  position: sticky;
+  position: absolute;
+  width: 100vw;
+  top: 0%;
+  left: 0;
   transition: all 0.3s ease-in-out;
   min-height: 120px;
   background-color: transparent;
@@ -17,20 +21,25 @@
     align-items: center;
     padding: 0 1rem;
     cursor: pointer;
+
+    @media (max-width: 920px) {
+      padding: unset;
+    }
+
+    &:hover {
+      color: $primary-color;
+    }
   }
 
   & img {
     filter: invert(0);
   }
 
-  &.active {
-    transition: all 0.3s ease-in-out;
-    min-height: 100px;
-    background-color: #fff;
-  }
-
   .logo {
     padding-left: 15px;
+    @media (max-width: 920px) {
+      padding: unset;
+    }
     & img {
       min-width: 200px;
     }
@@ -40,6 +49,8 @@
     display: none;
     color: #fff;
     padding-right: 15px;
+    margin-bottom: 2rem;
+    transition: all ease-in-out 0.3s;
 
     @media (max-width: 768px) {
       display: block;
@@ -48,41 +59,87 @@
       cursor: pointer;
       z-index: 2;
     }
+    @media (max-width: 380px) {
+      padding-right: 10px;
+    }
   }
 
   .navItems {
+    visibility: hidden;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    flex: 5;
+
+    @media (max-width: 1000px) {
+      flex: 7;
+    }
 
     @media (max-width: 768px) {
       display: none;
+    }
+
+    & > .active {
+      color: #6c63fe;
+      filter: drop-shadow(0px 2px 10px $primary-color);
     }
   }
 
   .navAction {
     display: flex;
     align-items: center;
-    padding-right: 15px;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    transition: all ease-in-out 0.3s;
+    justify-content: flex-end;
+    flex: 2;
+
+    @media (max-width: 920px) {
+      padding-right: 0.5rem;
+    }
 
     @media (max-width: 768px) {
-      margin-left: auto;
     }
 
     & a {
-      border-radius: 4px;
-      background: #256ce1;
+      background: none;
       padding: 10px 20px;
-      color: #fff;
-      border: none;
+      color: #6c63fe;
+      border: 2px solid $primary-color;
+      border-radius: 50px;
       outline: none;
       cursor: pointer;
       transition: all 0.25s ease-in-out;
 
       &:hover {
         transition: all 0.25s ease-in-out;
-        background: #fff;
-        color: #010606;
+        background: $primary-color;
+        color: #fff;
       }
+
+      @media (max-width: 420px) {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+      }
+    }
+  }
+
+  &.active {
+    transition: all 0.3s ease-in-out;
+    min-height: 100px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 6%);
+
+    .navItems {
+      visibility: visible;
+    }
+
+    .navAction {
+      padding-bottom: unset;
+    }
+    .navMobile {
+      margin-bottom: unset;
     }
   }
 
@@ -93,12 +150,12 @@
     height: 100vh;
     width: 50vw;
     min-width: 320px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     flex-direction: column;
     transform: translateX(-100%);
     opacity: 0;
-    padding: calc((100% - 100px) / 2) 1rem;
+    padding: calc((100% - 400px) / 2) 1rem;
     transition: all 0.1s ease-in-out;
 
     &.active {
@@ -107,6 +164,16 @@
       opacity: 1;
 
       .mobileItems {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+
+        & a {
+          color: white;
+        }
+
         & > * {
           min-height: 50px;
         }

@@ -8,6 +8,8 @@ export default (req, res) => {
   const message = `
   Name: ${body.name}\r\n
   Email: ${body.email}\r\n
+  Company: ${body.company}\r\n
+  Phone: ${body.email}\r\n
   Message: ${body.message}
   `;
 

@@ -1,7 +1,7 @@
 export const GamblingAddiction = [
   {
     id: 1,
-    title: "Think",
+    title: "Daily",
     body: "Think about gambling a great deal of your time? Does it consume your thoughts; does it affect your daily plans?",
     src: "/images/question.png",
     alt: "Question Graphic",
@@ -29,14 +29,14 @@ export const GamblingAddiction = [
   },
   {
     id: 5,
-    title: "Miss",
-    body: "Miss work because of your gambling?",
+    title: "Responsibilities",
+    body: "Do you let down loved ones and break promises?",
     src: "/images/question.png",
     alt: "Question Graphic",
   },
   {
     id: 6,
-    title: "Affect",
+    title: "Health",
     body: "Is it affecting your health? Do you have trouble sleeping; feel anxious, depressed or even suicidal after you gamble but still continue?",
     src: "/images/question.png",
     alt: "Question Graphic",
