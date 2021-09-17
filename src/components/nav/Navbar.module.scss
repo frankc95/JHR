@@ -2,7 +2,6 @@ $primary-color: #6c63fe;
 
 .nav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1200px) / 2);
   z-index: 466666666666666666;
@@ -18,9 +17,9 @@ $primary-color: #6c63fe;
   h1 {
     color: #000;
     display: flex;
-    align-items: center;
     padding: 0 1rem;
     cursor: pointer;
+    padding-top: 0.5rem;
 
     @media (max-width: 920px) {
       padding: unset;
@@ -67,7 +66,7 @@ $primary-color: #6c63fe;
   .navItems {
     visibility: hidden;
     display: flex;
-    align-items: center;
+
     justify-content: space-around;
     width: 100%;
     flex: 5;
@@ -88,9 +87,9 @@ $primary-color: #6c63fe;
 
   .navAction {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     padding-right: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 0.5rem;
     transition: all ease-in-out 0.3s;
     justify-content: flex-end;
     flex: 2;
@@ -104,6 +103,7 @@ $primary-color: #6c63fe;
 
     & a {
       background: none;
+      padding-top: 10px !important;
       padding: 10px 20px;
       color: #6c63fe;
       border: 2px solid $primary-color;
@@ -131,12 +131,18 @@ $primary-color: #6c63fe;
     background-color: #fff;
     box-shadow: 0 1px 2px rgb(0 0 0 / 6%);
 
+    & a {
+      align-items: center;
+      padding-top: unset;
+    }
+
     .navItems {
       visibility: visible;
     }
 
     .navAction {
-      padding-bottom: unset;
+      padding-top: unset;
+      align-items: center;
     }
     .navMobile {
       margin-bottom: unset;

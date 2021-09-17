@@ -71,9 +71,11 @@ $primary-color: #6c63fe;
       height: 100% !important;
       object-fit: cover;
       border-radius: 50%;
-      border: 2px solid rgba($primary-color, 0.4) !important;
+      // border: 2px solid rgba($primary-color, 0.4) !important;
+      border: 2px solid rgba(#fff, 0.4) !important;
       &:hover {
-        border: 2px solid rgba($primary-color, 0.8) !important;
+        // border: 2px solid rgba($primary-color, 0.8) !important;
+        border: 2px solid rgba(#fff, 0.8) !important;
       }
     }
   }
@@ -81,7 +83,8 @@ $primary-color: #6c63fe;
   .textWrap {
     text-align: center;
     margin-top: 15px;
-    color: rgba($primary-color, 0.6);
+    // color: rgba($primary-color, 0.6);
+    color: rgba(0, 0, 0, 0.6);
 
     & h6 {
       font-size: 1.3rem;
@@ -101,7 +104,8 @@ $primary-color: #6c63fe;
     .social {
       margin-bottom: -15px;
       & a {
-        color: rgba($primary-color, 0.8);
+        // color: rgba($primary-color, 0.8);
+        color: rgba(0, 0, 0, 0.6);
       }
     }
   }
@@ -110,7 +114,11 @@ $primary-color: #6c63fe;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
     .textWrap {
-      color: rgba($primary-color, 0.8);
+      // color: rgba($primary-color, 0.8);
+      & h6,
+      & p {
+        color: rgba(0, 0, 0, 0.9);
+      }
     }
 
     .socialWrap {
@@ -121,6 +129,10 @@ $primary-color: #6c63fe;
       .social {
         margin-bottom: 10px;
         transition: all ease-in-out 0.4s;
+
+        & a {
+          color: rgba(0, 0, 0, 0.9);
+        }
       }
     }
   }

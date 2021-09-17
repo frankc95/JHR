@@ -77,12 +77,12 @@ $primary-color: #6c63fe;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px 40px;
     text-align: left;
+    align-items: flex-start;
     .textWrap {
       display: flex;
       flex-direction: column;
       justify-content: center;
       text-align: justify;
-      margin-bottom: auto;
       padding: 0 2rem;
       & h2 {
         @media (max-width: 768px) {
@@ -136,7 +136,7 @@ $primary-color: #6c63fe;
       }
     }
     .videoModal {
-      margin-right: 85px;
+      margin: 0;
       position: relative;
       z-index: 0;
       & img {

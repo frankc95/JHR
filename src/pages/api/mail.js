@@ -14,9 +14,9 @@ export default (req, res) => {
   `;
 
   const data = {
-    to: "blazewicz.j@gmail.com",
-    from: "blazewicz.j@gmail.com",
-    subject: "New web form message!",
+    to: "info@jhrecovery.com",
+    from: "info@jhrecovery.com",
+    subject: "John Hartson Recovery Workshop",
     text: message,
     html: message.replace(/\r\n/g, "<br>"),
   };

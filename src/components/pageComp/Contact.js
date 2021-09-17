@@ -1,8 +1,16 @@
-import React from "react";
-
+import React, { useEffect, useState } from "react";
 import styles from "./Contact.module.scss";
 
 const Contact = () => {
+  const [sent, setSent] = useState(false);
+
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setSent(true);
+  //   }, 3000);
+  //   setSent(false);
+  // }, [handleSubmit]);
+
   async function handleSubmit(e) {
     e.preventDefault();
     const formData = {};
@@ -15,6 +23,13 @@ const Contact = () => {
       method: "post",
       body: JSON.stringify(formData),
     });
+    var form = document.getElementById("contactForm");
+    form.reset();
+    setSent(true);
+
+    setTimeout(() => {
+      setSent(false);
+    }, 3000);
   }
 
   return (
@@ -26,7 +41,7 @@ const Contact = () => {
       </div>
       <div className={styles.grid}>
         <div className={styles.formWrap}>
-          <form method="post" onSubmit={handleSubmit}>
+          <form method="post" id="contactForm" onSubmit={handleSubmit}>
             <div className={styles.double}>
               <div className={styles.single}>
                 <label htmlFor="name" className={styles.formLabel}>
@@ -78,6 +93,14 @@ const Contact = () => {
             </label>
             <textarea required name="message" className={styles.formInput} />
 
+            {sent ? (
+              <>
+                <div className={styles.actionMessage}>
+                  <p>Your message has been sent!</p>
+                </div>
+                <br />
+              </>
+            ) : null}
             <button>Submit</button>
           </form>
         </div>

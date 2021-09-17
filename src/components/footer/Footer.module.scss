@@ -4,19 +4,19 @@ $primary-color: #6c63fe;
   justify-content: center;
   min-height: 200px;
   padding: 0.5rem calc((100vw - 800px) / 2);
-  margin-top: 100px;
+  position: relative;
+
   @media (max-width: 768px) {
     margin-top: 10px;
   }
 
   .inner {
-    border-top: solid 2px rgba(0, 0, 0, 0.2);
-    border-radius: 2px;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
+
     & img {
       min-width: 150px;
       cursor: pointer;
