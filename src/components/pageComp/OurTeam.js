@@ -31,7 +31,7 @@ const OurTeam = () => {
         y: -50,
       });
     }
-  }, [inView]);
+  }, [inView, animation]);
   return (
     <section id="3" className={styles.wrapper}>
       {/* Our Team */}

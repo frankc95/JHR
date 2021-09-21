@@ -28,7 +28,7 @@ const Contact = () => {
         y: -50,
       });
     }
-  }, [inView]);
+  }, [inView, animation]);
 
   async function handleSubmit(e) {
     e.preventDefault();

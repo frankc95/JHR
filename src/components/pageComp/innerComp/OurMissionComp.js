@@ -28,7 +28,7 @@ const OurMissionComp = () => {
         y: -50,
       });
     }
-  }, [inView]);
+  }, [inView, animation]);
   return (
     <motion.div className={styles.grid} ref={ref} animate={animation}>
       <div className={styles.innerGrid}>

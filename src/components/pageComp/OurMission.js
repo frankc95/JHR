@@ -56,7 +56,7 @@ const OurMission = () => {
         x: "100vw",
       });
     }
-  }, [inView]);
+  }, [inView, animation]);
 
   return (
     <>

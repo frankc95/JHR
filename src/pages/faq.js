@@ -30,7 +30,7 @@ export default function faq() {
         }}
       >
         <h1>FAQs</h1>
-        <h4>Sorry, this page doesn't exist yet...</h4> <br />
+        <h4>Sorry, this page doesn&apos;t exist yet...</h4> <br />
         <Link href="/">
           <a style={{ zIndex: "2" }}>Go back</a>
         </Link>
