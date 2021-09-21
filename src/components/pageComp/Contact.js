@@ -1,15 +1,34 @@
 import React, { useEffect, useState } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import styles from "./Contact.module.scss";
 
 const Contact = () => {
   const [sent, setSent] = useState(false);
+  const { ref, inView } = useInView({
+    threshold: 0,
+  });
+  const animation = useAnimation();
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setSent(true);
-  //   }, 3000);
-  //   setSent(false);
-  // }, [handleSubmit]);
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        scale: 1,
+        opacity: 1,
+        y: 0,
+        transition: {
+          delay: 0.4,
+        },
+      });
+    }
+    if (!inView) {
+      animation.start({
+        scale: 0.8,
+        opacity: 0,
+        y: -50,
+      });
+    }
+  }, [inView]);
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -35,11 +54,11 @@ const Contact = () => {
   return (
     <section id="5" className={styles.wrapper}>
       {/* Contact */}
-      <div className={styles.headlineWrap}>
+      <motion.div className={styles.headlineWrap} ref={ref} animate={animation}>
         <h5>have any questions?</h5>
         <h2>Get in touch with us!</h2>
-      </div>
-      <div className={styles.grid}>
+      </motion.div>
+      <motion.div className={styles.grid} ref={ref} animate={animation}>
         <div className={styles.formWrap}>
           <form method="post" id="contactForm" onSubmit={handleSubmit}>
             <div className={styles.double}>
@@ -104,7 +123,7 @@ const Contact = () => {
             <button>Submit</button>
           </form>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

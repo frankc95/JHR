@@ -10,7 +10,7 @@ export const AskingWhy = [
   },
   {
     id: 2,
-    title: "Our Plan",
+    title: "What's Happening?",
     body: "John and Tony are planning a series of in-house workshops, aimed at reaching out to the community, to recognise the traits and pitfalls of problem gambling, the damage it can cause, and the light at the end of the tunnel. It is hoped that companies, large or small, sports associations and clubs, and other groups that could benefit from hearing personal stories and education material will be interested in hosting their Workshops. These can be tailored to suit the audience as appropriate.",
     src: "/images/OurMission2.png",
     alt: "John Hartson Recovery Our Plan Image",
@@ -19,7 +19,7 @@ export const AskingWhy = [
   },
   {
     id: 3,
-    title: "Know More",
+    title: "Find Out More",
     body: "Please follow the links to read more information on John and Tony themselves. If you are interested in hosting a workshop, you can contact them via the email address on our contact page for details of costs etc.",
     src: "/images/OurMission3.png",
     alt: "John Hartson Recovery Know More Image",

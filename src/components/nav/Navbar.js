@@ -80,6 +80,7 @@ const Navbar = ({ mobileMenu, setMobileMenu }) => {
             <TiTimes
               className={styles.navMobile}
               onClick={() => setMobileMenu(false)}
+              style={{ fill: "#fff" }}
             />
           )}
           <div

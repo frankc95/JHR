@@ -1,20 +1,74 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 import styles from "./OurMission.module.scss";
-import { GamblingAddiction } from "./DB/GamblingAddiction";
 import { AskingWhy } from "./DB/AskingWhy";
 import { RecoverySteps } from "./DB/RecoverySteps";
+import { useInView } from "react-intersection-observer";
+import OurMissionComp from "./innerComp/OurMissionComp";
+import GamblingAddictionComp from "./innerComp/GamblingAddictionComp";
 
 const OurMission = () => {
+  const { ref, ref1, ref2, inView } = useInView({
+    threshold: 0,
+  });
+  const animation = useAnimation();
+  const animation1 = useAnimation();
+  const animation2 = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        scale: 1,
+        opacity: 1,
+        y: 0,
+        transition: {
+          delay: 0.4,
+        },
+      });
+      animation1.start({
+        y: "0vw",
+        transition: {
+          type: "spring",
+          duration: 1,
+          bounce: 0.3,
+        },
+      });
+      animation2.start({
+        x: "0vw",
+        transition: {
+          type: "spring",
+          duration: 1,
+          bounce: 0.3,
+        },
+      });
+    }
+    if (!inView) {
+      animation.start({
+        scale: 0.8,
+        opacity: 0,
+        x: 50,
+      });
+      animation1.start({
+        x: "-100vw",
+      });
+      animation2.start({
+        x: "100vw",
+      });
+    }
+  }, [inView]);
+
   return (
     <>
       <section id="2" className={styles.wrapper}>
         {/* Asking Why */}
-        <div className={styles.headlineWrap}>
-          <h5>why?</h5>
-          <h2>Simply, what benefits them, benefits you.</h2>
-        </div>
-        <div className={styles.grid}>
+        <motion.div ref={ref} animate={animation}>
+          <div className={styles.headlineWrap}>
+            <h5>why?</h5>
+            <h2>Simply, what benefits them, benefits you.</h2>
+          </div>
+        </motion.div>
+        <motion.div className={styles.grid} ref={ref} animate={animation}>
           {AskingWhy.map((item) => (
             <div className={styles.innerGrid} key={item.id}>
               <div className={styles.graphic}>
@@ -31,64 +85,13 @@ const OurMission = () => {
               </div>
             </div>
           ))}
-        </div>
+        </motion.div>
 
         {/* Our Mission */}
-        <div className={styles.grid}>
-          <div className={styles.innerGrid}>
-            <div className={styles.videoModal}>
-              <Image
-                src="/images/cycle-of-gambling-addiction.jpeg"
-                alt="cycle-of-gambling-addiction"
-                width={628}
-                height={628}
-              />
-            </div>
-            <div className={styles.textWrap}>
-              <div className={styles.headline2Wrap}>
-                <h5>OUR MISSION</h5>
-                <h2>Freedom from active addiction takes time.</h2>
-              </div>
-              <p>
-                There are various methods that can be used to help with the
-                abstinence of problem gambling such as self-help therapy groups
-                and 12 Step programs like Gamblers Anonymous,
-                Counsellors/Therapists, Cognitive Behaviour Therapy (CBT) based
-                professional treatment and self-help CBT models such as SMART
-                recovery. These can all be helpful in gaining recovery from
-                problem gambling however, in order for any of these to work, it
-                is necessary to recognise that there is a problem and that help
-                is needed.
-              </p>
-            </div>
-          </div>
-        </div>
+        <OurMissionComp />
 
         {/* Gambling Addiction */}
-        <div className={styles.grid}>
-          <div className={styles.headlineWrap}>
-            <h5>GAMBLING ADDICTION</h5>
-            <h2>Is gambling a problem for me?</h2>
-          </div>
-          <div className={styles.innerGrid}>
-            {GamblingAddiction.map((item) => (
-              <div className={styles.singleItem} key={item.id}>
-                <div className={styles.question}>
-                  <Image
-                    src={item.src}
-                    alt={item.alt}
-                    width={1920}
-                    height={1080}
-                  />
-                </div>
-                <div className={styles.textWrap}>
-                  <h6>{item.title}</h6>
-                  <p>{item.body}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        <GamblingAddictionComp />
       </section>
 
       <section className={styles.maxWidth}>

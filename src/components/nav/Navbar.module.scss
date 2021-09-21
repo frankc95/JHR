@@ -23,6 +23,7 @@ $primary-color: #6c63fe;
 
     @media (max-width: 920px) {
       padding: unset;
+      width: 50%;
     }
 
     &:hover {
@@ -34,10 +35,17 @@ $primary-color: #6c63fe;
     filter: invert(0);
   }
 
+  & svg {
+    transition: all ease-in-out 0.3s;
+  }
+
   .logo {
     padding-left: 15px;
     @media (max-width: 920px) {
       padding: unset;
+      width: 80%;
+      padding-top: 0.5rem;
+      padding-left: 0.5rem;
     }
     & img {
       min-width: 200px;
@@ -60,6 +68,7 @@ $primary-color: #6c63fe;
     }
     @media (max-width: 380px) {
       padding-right: 10px;
+      padding-top: 0.5rem;
     }
   }
 
@@ -96,6 +105,7 @@ $primary-color: #6c63fe;
 
     @media (max-width: 920px) {
       padding-right: 0.5rem;
+      width: 50%;
     }
 
     @media (max-width: 768px) {
@@ -111,6 +121,7 @@ $primary-color: #6c63fe;
       outline: none;
       cursor: pointer;
       transition: all 0.25s ease-in-out;
+      width: fit-content;
 
       &:hover {
         transition: all 0.25s ease-in-out;
@@ -146,6 +157,10 @@ $primary-color: #6c63fe;
     }
     .navMobile {
       margin-bottom: unset;
+    }
+    & svg {
+      height: 100%;
+      transform: translateY(50%);
     }
   }
 

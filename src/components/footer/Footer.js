@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Link as RLink } from "react-scroll";
+import Link from "next/link";
 import styles from "./Footer.module.scss";
 import { FaHeart } from "react-icons/fa";
 
@@ -23,12 +24,12 @@ const footer = () => {
             <RLink to="1" smooth={true} duration={1000}>
               Home
             </RLink>
-            <RLink to="/" smooth={true} duration={1000}>
+            <Link href="/faq" smooth={true} duration={1000}>
               FAQs
-            </RLink>
-            <RLink to="/" smooth={true} duration={1000}>
+            </Link>
+            <Link href="/privacy-policy" smooth={true} duration={1000}>
               Privacy & Policy
-            </RLink>
+            </Link>
             <RLink to="5" smooth={true} duration={1000}>
               Contact
             </RLink>

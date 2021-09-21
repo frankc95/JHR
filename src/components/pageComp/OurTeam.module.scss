@@ -104,8 +104,8 @@ $primary-color: #6c63fe;
     .social {
       margin-bottom: -15px;
       & a {
-        // color: rgba($primary-color, 0.8);
-        color: rgba(0, 0, 0, 0.6);
+        color: rgba($primary-color, 0.8);
+        // color: rgba(0, 0, 0, 0.6);
       }
     }
   }
@@ -131,7 +131,8 @@ $primary-color: #6c63fe;
         transition: all ease-in-out 0.4s;
 
         & a {
-          color: rgba(0, 0, 0, 0.9);
+          // color: rgba(0, 0, 0, 0.9);
+          color: rgba($primary-color, 0.8);
         }
       }
     }
