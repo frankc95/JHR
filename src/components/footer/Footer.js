@@ -21,9 +21,9 @@ const footer = () => {
             </div>
           </RLink>
           <div className={styles.otherLinks}>
-            <RLink to="1" smooth={true} duration={1000}>
+            <Link href="/" smooth={true} duration={1000}>
               Home
-            </RLink>
+            </Link>
             <Link href="/faq" smooth={true} duration={1000}>
               FAQs
             </Link>
