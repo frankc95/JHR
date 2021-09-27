@@ -6,7 +6,7 @@ import { TiTimes } from "react-icons/ti";
 
 const Home = () => {
   const [player, setPlayer] = useState(false);
-  console.log(player);
+  // console.log(player);
   return (
     <section id="1" className={styles.wrapper}>
       <div className={styles.videoModal}>
