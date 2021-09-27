@@ -32,8 +32,6 @@ const Contact = () => {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    const formData = {};
-
     var form = document.getElementById("contactForm");
     form.reset();
     setSent(true);
@@ -57,7 +55,7 @@ const Contact = () => {
             method="POST"
             data-netlify="true"
             id="contactForm"
-            onSubmit={handleSubmit}
+            // onSubmit={handleSubmit}
           >
             <input type="hidden" name="form-name" value="contact" />
             <div className={styles.double}>
