@@ -6,8 +6,8 @@
     "dev": "next -p 8080",
     "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint",
-    "postinstall": "netlify-lambda install"
+    "lint": "next lint"
+    // "postinstall": "netlify-lambda install"
   },
   "dependencies": {
     "@sendgrid/mail": "^7.4.7",
