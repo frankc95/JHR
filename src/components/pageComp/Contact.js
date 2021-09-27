@@ -58,11 +58,9 @@ const Contact = () => {
             id="contactForm"
             onSubmit="submit"
           >
-            <p className={styles.hidden}>
-              <label type="hidden">
-                Don’t fill this out if you’re human: <input name="bot-field" />
-              </label>
-            </p>
+            <label className={styles.hidden} type="hidden">
+              Don’t fill this out if you’re human: <input name="bot-field" />
+            </label>
             <input type="hidden" name="form-name" value="contact v1" />
             <div className={styles.double}>
               <div className={styles.single}>
