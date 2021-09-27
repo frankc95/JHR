@@ -51,13 +51,13 @@ const Contact = () => {
       <motion.div className={styles.grid} ref={ref} animate={animation}>
         <div className={styles.formWrap}>
           <form
-            name="contact"
+            name="contact v1"
             method="POST"
             data-netlify="true"
             id="contactForm"
-            // onSubmit={handleSubmit}
+            onSubmit="submit"
           >
-            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="form-name" value="contact v1" />
             <div className={styles.double}>
               <div className={styles.single}>
                 <label htmlFor="name" className={styles.formLabel}>
