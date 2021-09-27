@@ -33,15 +33,7 @@ const Contact = () => {
   async function handleSubmit(e) {
     e.preventDefault();
     const formData = {};
-    Array.from(e.currentTarget.elements).forEach((field) => {
-      if (!field.name) return;
-      formData[field.name] = field.value;
-    });
-    console.log(formData);
-    fetch("/api/mail", {
-      method: "post",
-      body: JSON.stringify(formData),
-    });
+
     var form = document.getElementById("contactForm");
     form.reset();
     setSent(true);
@@ -60,7 +52,14 @@ const Contact = () => {
       </motion.div>
       <motion.div className={styles.grid} ref={ref} animate={animation}>
         <div className={styles.formWrap}>
-          <form method="post" id="contactForm" onSubmit={handleSubmit}>
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            id="contactForm"
+            onSubmit={handleSubmit}
+          >
+            <input type="hidden" name="form-name" value="contact" />
             <div className={styles.double}>
               <div className={styles.single}>
                 <label htmlFor="name" className={styles.formLabel}>
@@ -70,6 +69,7 @@ const Contact = () => {
                   required
                   type="text"
                   name="name"
+                  id="name"
                   className={styles.formInput}
                 />
               </div>
@@ -82,6 +82,7 @@ const Contact = () => {
                   required
                   type="text"
                   name="email"
+                  id="email"
                   className={styles.formInput}
                 />
               </div>
@@ -95,6 +96,7 @@ const Contact = () => {
                 <input
                   type="text"
                   name="company"
+                  id="company"
                   className={styles.formInput}
                 />
               </div>
@@ -103,14 +105,24 @@ const Contact = () => {
                 <label htmlFor="phone" className={styles.formLabel}>
                   Contact number
                 </label>
-                <input type="text" name="phone" className={styles.formInput} />
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  className={styles.formInput}
+                />
               </div>
             </div>
 
             <label htmlFor="name" className={styles.formLabel}>
               Message <span>*</span>
             </label>
-            <textarea required name="message" className={styles.formInput} />
+            <textarea
+              required
+              name="message"
+              id="message"
+              className={styles.formInput}
+            />
 
             {sent ? (
               <>
