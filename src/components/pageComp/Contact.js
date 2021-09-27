@@ -56,12 +56,14 @@ const Contact = () => {
             netlify-honeypot="bot-field"
             data-netlify="true"
             id="contactForm"
-            onSubmit="submit"
+            onSubmit={handleSubmit}
           >
+            <p className={styles.hidden}>
+              <label type="hidden">
+                Don’t fill this out if you’re human: <input name="bot-field" />
+              </label>
+            </p>
             <input type="hidden" name="form-name" value="contact v1" />
-            <label type="hidden">
-              Don’t fill this out if you’re human: <input name="bot-field" />
-            </label>
             <div className={styles.double}>
               <div className={styles.single}>
                 <label htmlFor="name" className={styles.formLabel}>
