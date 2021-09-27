@@ -26,34 +26,12 @@ const OurMission = () => {
           delay: 0.4,
         },
       });
-      animation1.start({
-        y: "0vw",
-        transition: {
-          type: "spring",
-          duration: 1,
-          bounce: 0.3,
-        },
-      });
-      animation2.start({
-        x: "0vw",
-        transition: {
-          type: "spring",
-          duration: 1,
-          bounce: 0.3,
-        },
-      });
     }
     if (!inView) {
       animation.start({
         scale: 0.8,
         opacity: 0,
-        x: 50,
-      });
-      animation1.start({
-        x: "-100vw",
-      });
-      animation2.start({
-        x: "100vw",
+        y: -50,
       });
     }
   }, [inView, animation]);

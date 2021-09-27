@@ -9,13 +9,13 @@ export default (req, res) => {
   Name: ${body.name}\r\n
   Email: ${body.email}\r\n
   Company: ${body.company}\r\n
-  Phone: ${body.email}\r\n
+  Phone: ${body.phone}\r\n
   Message: ${body.message}
   `;
 
   const data = {
-    to: "info@jhrecovery.com",
-    from: "info@jhrecovery.com",
+    to: "info@jhrecovery.co.uk",
+    from: `${body.email}`,
     subject: "John Hartson Recovery Workshop",
     text: message,
     html: message.replace(/\r\n/g, "<br>"),

@@ -71,22 +71,39 @@ const Navbar = ({ mobileMenu, setMobileMenu }) => {
               Get In Touch
             </RLink>
           </div>
-          {!mobileMenu ? (
-            <VscThreeBars
+          {/* <VscThreeBars
               className={styles.navMobile}
               onClick={() => setMobileMenu(true)}
-            />
-          ) : (
+            /> 
             <TiTimes
               className={styles.navMobile}
               onClick={() => setMobileMenu(false)}
               style={{ fill: "#fff" }}
             />
+            */}
+          {!mobileMenu ? (
+            <div
+              className={styles.menuToggler}
+              onClick={() => setMobileMenu(true)}
+            >
+              <span></span>
+            </div>
+          ) : (
+            <div
+              className={
+                mobileMenu
+                  ? `${styles.menuToggler} ${styles.active}`
+                  : styles.menuToggler
+              }
+              onClick={() => setMobileMenu(false)}
+            >
+              <span></span>
+            </div>
           )}
           <div
             className={
               mobileMenu
-                ? `${styles.modalMobile} ${styles.active} active`
+                ? `${styles.modalMobile} ${styles.active}`
                 : styles.modalMobile
             }
           >
