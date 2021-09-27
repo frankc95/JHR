@@ -15,7 +15,8 @@ export default (req, res) => {
 
   const data = {
     to: "info@jhrecovery.co.uk",
-    from: `${body.email}`,
+    from: "info@jhrecovery.co.uk",
+    reply_to: `${body.email}`,
     subject: "John Hartson Recovery Workshop",
     text: message,
     html: message.replace(/\r\n/g, "<br>"),
