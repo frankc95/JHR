@@ -1,4 +1,6 @@
-$primary-color: #6c63fe;
+// $primary-color: #6c63fe;
+$primary-color: #8b2bf0;
+
 .wrapper {
   padding: 0 calc((100% - 1200px) / 2);
   min-height: 100vh;
@@ -84,6 +86,7 @@ $primary-color: #6c63fe;
       justify-content: center;
       text-align: justify;
       padding: 0 2rem;
+      flex: 50%;
       & h2 {
         @media (max-width: 768px) {
           text-align: center;
@@ -133,13 +136,17 @@ $primary-color: #6c63fe;
       }
     }
     .graphic {
+      flex: 50%;
       & > div {
+        // border-radius: 25px;
         @media (max-width: 768px) {
           max-height: 500px !important;
         }
       }
       & img {
         object-fit: contain;
+        // object-position: -60px center;
+        object-position: top;
       }
     }
     .videoModal {
