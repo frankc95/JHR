@@ -1,6 +1,22 @@
+$primary-color: #6c63fe;
 .wrapper {
   padding: 0 calc((100% - 1200px) / 2);
   padding-top: 100px;
+  position: relative;
+  padding-bottom: 100px;
+  ::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    width: 60vw;
+    opacity: 0.1;
+  }
 }
 
 .headlineWrap {
@@ -11,7 +27,7 @@
   & h5 {
     font-size: 0.9rem;
     margin-bottom: 10px;
-    color: #20afb1;
+    color: $primary-color;
   }
 
   & p {
@@ -27,17 +43,59 @@
   display: grid;
   grid-gap: 50px 40px;
   grid-template-columns: repeat(1, 1fr);
-  padding: 100px calc((100% - 1200px) / 2);
+  padding: 0px calc((100% - 1200px) / 2);
+  width: 100%;
 
   .formWrap {
-    padding: 0 15px;
+    padding: 20px calc((100% - 800px) / 2);
+    width: 100%;
+
+    .double {
+      display: flex;
+      flex: 1;
+      width: 100%;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+    }
+
+    .single {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding-right: 20px;
+
+      & span {
+        color: red;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      @media (max-width: 768px) {
+        &:last-child {
+          padding-right: 20px;
+        }
+      }
+    }
+
+    & textarea {
+      min-height: 180px;
+    }
 
     .formLabel {
       width: 100%;
       display: flex;
+      flex: 1;
       font-size: 15px;
       font-weight: 700;
       margin-bottom: 10px;
+
+      & span {
+        color: red;
+      }
     }
 
     .formInput {
@@ -57,10 +115,22 @@
       margin-bottom: 15px;
 
       &:focus {
-        border-color: #20afb1;
-        box-shadow: 0 0 0 2px #20afb1;
+        border-color: $primary-color;
+        box-shadow: 0 0 0 2px $primary-color;
         outline: none;
       }
+    }
+
+    .actionMessage {
+      background-color: #2d9035;
+      color: #fff;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+      width: fit-content;
+      padding: 10px 15px;
     }
 
     button {
@@ -68,15 +138,16 @@
       display: inline-block;
       border: 0;
       border-radius: 45px;
-      font-size: 14px;
+      font-size: 1rem;
+      font-weight: 700;
       letter-spacing: -0.15px;
-      padding: 12px 20px;
+      padding: 12px 30px;
       cursor: pointer;
       line-height: 1.2;
       transition: all 0.25s;
       font-weight: 500;
       color: white;
-      background-color: #20afb1;
+      background-color: $primary-color;
     }
   }
 }

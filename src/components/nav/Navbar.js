@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
+// import Link from "next/link";
 import Image from "next/image";
+import { Link as RLink } from "react-scroll";
 
 import { MenuItems } from "./MenuItems";
 import styles from "./Navbar.module.scss";
@@ -40,7 +41,7 @@ const Navbar = ({ mobileMenu, setMobileMenu }) => {
     <>
       <header className={styles.header}>
         <nav className={navbar ? `${styles.nav} ${styles.active}` : styles.nav}>
-          <Link href="/">
+          <RLink to="1" smooth={true} duration={1000}>
             <div className={styles.logo}>
               <Image
                 src="/logo.svg"
@@ -49,40 +50,76 @@ const Navbar = ({ mobileMenu, setMobileMenu }) => {
                 height={16}
               />
             </div>
-          </Link>
+          </RLink>
           <div className={styles.navItems}>
             {MenuItems.map((item, i) => (
-              <Link key={i} href={item.url}>
+              <RLink
+                key={i}
+                activeClass={styles.active}
+                to={item.url}
+                spy={true}
+                smooth={true}
+                offset={item.offSet}
+                duration={750}
+              >
                 {item.title}
-              </Link>
+              </RLink>
             ))}
           </div>
           <div className={styles.navAction}>
-            <Link href="#5">Get In Touch</Link>
+            <RLink to="5" smooth={true} duration={1000}>
+              Get In Touch
+            </RLink>
           </div>
-          {!mobileMenu ? (
-            <VscThreeBars
+          {/* <VscThreeBars
               className={styles.navMobile}
               onClick={() => setMobileMenu(true)}
-            />
-          ) : (
+            /> 
             <TiTimes
               className={styles.navMobile}
               onClick={() => setMobileMenu(false)}
+              style={{ fill: "#fff" }}
             />
+            */}
+          {!mobileMenu ? (
+            <div
+              className={styles.menuToggler}
+              onClick={() => setMobileMenu(true)}
+            >
+              <span></span>
+            </div>
+          ) : (
+            <div
+              className={
+                mobileMenu
+                  ? `${styles.menuToggler} ${styles.active}`
+                  : styles.menuToggler
+              }
+              onClick={() => setMobileMenu(false)}
+            >
+              <span></span>
+            </div>
           )}
           <div
             className={
               mobileMenu
-                ? `${styles.modalMobile} ${styles.active} active`
+                ? `${styles.modalMobile} ${styles.active}`
                 : styles.modalMobile
             }
           >
             <div className={styles.mobileItems}>
               {MenuItems.map((item, i) => (
-                <Link key={i} href={item.url}>
+                <RLink
+                  key={i}
+                  activeClass={styles.active}
+                  to={item.url}
+                  spy={true}
+                  smooth={true}
+                  offset={item.offSet}
+                  duration={750}
+                >
                   {item.title}
-                </Link>
+                </RLink>
               ))}
             </div>
           </div>

@@ -7,6 +7,7 @@ export const Testimonial = [
       src: "/images/customer.png",
       alt: "Customer Profile Picture",
       name: "Anna Maria",
+      social: "@anna.m",
     },
   },
   {
@@ -17,6 +18,7 @@ export const Testimonial = [
       src: "/images/customer.png",
       alt: "Customer Profile Picture",
       name: "Denny Hilguston",
+      social: "@denny.hill",
     },
   },
   {
@@ -27,6 +29,18 @@ export const Testimonial = [
       src: "/images/customer.png",
       alt: "Customer Profile Picture",
       name: "Adam Klark",
+      social: "@klarkk",
+    },
+  },
+  {
+    id: 4,
+    title: "Design Quality & performance",
+    body: "Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.",
+    person: {
+      src: "/images/customer.png",
+      alt: "Customer Profile Picture",
+      name: "Adam Klark",
+      social: "@klarkk",
     },
   },
 ];

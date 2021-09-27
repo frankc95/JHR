@@ -8,13 +8,16 @@ export default (req, res) => {
   const message = `
   Name: ${body.name}\r\n
   Email: ${body.email}\r\n
+  Company: ${body.company}\r\n
+  Phone: ${body.phone}\r\n
   Message: ${body.message}
   `;
 
   const data = {
-    to: "blazewicz.j@gmail.com",
-    from: "blazewicz.j@gmail.com",
-    subject: "New web form message!",
+    to: "info@jhrecovery.co.uk",
+    from: "info@jhrecovery.co.uk",
+    reply_to: `${body.email}`,
+    subject: "John Hartson Recovery Workshop",
     text: message,
     html: message.replace(/\r\n/g, "<br>"),
   };
