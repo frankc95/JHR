@@ -3,7 +3,7 @@ $primary-color: #6c63fe;
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 0.5rem calc((100vw - 1200px) / 2);
   z-index: 466666666666666666;
   position: absolute;
@@ -56,8 +56,8 @@ $primary-color: #6c63fe;
   .menuToggler {
     display: none;
     z-index: 999;
-    height: 28px;
-    width: 28px;
+    height: 30px;
+    width: 30px;
     outline: none;
     cursor: pointer;
     align-items: center;
@@ -131,7 +131,6 @@ $primary-color: #6c63fe;
     display: flex;
     align-items: baseline;
     padding-right: 2rem;
-    padding-top: 0.5rem;
     transition: all ease-in-out 0.3s;
     justify-content: flex-end;
     flex: 2;
@@ -174,6 +173,7 @@ $primary-color: #6c63fe;
     min-height: 100px;
     background-color: #fff;
     box-shadow: 0 1px 2px rgb(0 0 0 / 6%);
+    align-items: center;
 
     & a {
       align-items: center;
@@ -202,10 +202,10 @@ $primary-color: #6c63fe;
     top: 0;
     left: -100vw;
     z-index: 998;
-    background: rgba(#000, 0.8);
+    background: rgba(#fff, 0.95);
     clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
     width: 50vw;
-    min-width: 320px;
+    min-width: 380px;
     height: 100vh;
     padding: 100px;
     display: flex;
@@ -220,10 +220,15 @@ $primary-color: #6c63fe;
       height: 50vh;
 
       & a {
-        color: #2da8ff;
+        // color: #2da8ff;
+        color: $primary-color;
         font-size: 1.4rem;
         margin-bottom: 1rem;
         width: max-content;
+
+        &.active {
+          text-decoration: underline;
+        }
       }
     }
     &.active {

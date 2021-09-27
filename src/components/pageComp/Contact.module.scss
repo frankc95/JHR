@@ -54,6 +54,10 @@ $primary-color: #6c63fe;
       display: flex;
       flex: 1;
       width: 100%;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
     }
 
     .single {
@@ -69,6 +73,12 @@ $primary-color: #6c63fe;
       &:last-child {
         padding-right: 0;
       }
+
+      @media (max-width: 768px) {
+        &:last-child {
+          padding-right: 20px;
+        }
+      }
     }
 
     & textarea {
@@ -82,6 +92,10 @@ $primary-color: #6c63fe;
       font-size: 15px;
       font-weight: 700;
       margin-bottom: 10px;
+
+      & span {
+        color: red;
+      }
     }
 
     .formInput {

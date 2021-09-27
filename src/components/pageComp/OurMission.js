@@ -13,8 +13,6 @@ const OurMission = () => {
     threshold: 0,
   });
   const animation = useAnimation();
-  const animation1 = useAnimation();
-  const animation2 = useAnimation();
 
   useEffect(() => {
     if (inView) {
