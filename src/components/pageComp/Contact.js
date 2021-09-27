@@ -56,7 +56,7 @@ const Contact = () => {
             netlify-honeypot="bot-field"
             data-netlify="true"
             id="contactForm"
-            onSubmit={handleSubmit}
+            onSubmit="submit"
           >
             <p className={styles.hidden}>
               <label type="hidden">
