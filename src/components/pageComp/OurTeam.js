@@ -37,7 +37,7 @@ const OurTeam = () => {
       {/* Our Team */}
       <motion.div className={styles.headlineWrap} ref={ref} animate={animation}>
         <h5>our team</h5>
-        <h2>The most qualified and talented individuals</h2>
+        <h2>Our most qualified and talented individuals</h2>
       </motion.div>
       <motion.div className={styles.grid} ref={ref} animate={animation}>
         <div className={styles.innerGrid}>
@@ -61,6 +61,19 @@ const OurTeam = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className={styles.more}>
+          <div className={styles.text}>
+            <h4>More about us.</h4>
+            <p>
+              If you are interested in hosting a workshop, you can contact us
+              via our contact form below.
+            </p>
+            <p>Help in many areas of addiction and related mental health.</p>
+            <p>Offer specific and personalised group work sessions.</p>
+            <p>Lectures on specific help.</p>
+          </div>
+          <div className={styles.img}></div>
         </div>
       </motion.div>
     </section>

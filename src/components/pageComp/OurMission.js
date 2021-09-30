@@ -41,7 +41,7 @@ const OurMission = () => {
         <motion.div ref={ref} animate={animation}>
           <div className={styles.headlineWrap}>
             <h5>why?</h5>
-            <h2>Simply, what benefits them, benefits you.</h2>
+            <h2>What benefits them, benefits you.</h2>
           </div>
         </motion.div>
         <motion.div className={styles.grid} ref={ref} animate={animation}>
@@ -57,7 +57,9 @@ const OurMission = () => {
               </div>
               <div className={styles.textWrap}>
                 <h2>{item.title}</h2>
-                <p>{item.body}</p>
+                {item.body.map((p, i) => (
+                  <p key={i}>{p}</p>
+                ))}
               </div>
             </div>
           ))}

@@ -2,7 +2,9 @@ export const AskingWhy = [
   {
     id: 1,
     title: "Background",
-    body: "John Hartson, as well as being a renowned, world-famous footballer, is a recovering gambling addict.  He has teamed up with Tony Marini, a Psychotherapist and gambling addiction expert, who is a recovering gambling addict himself.  Together they will share their stories, help people recognise the problem (either within themselves or within their families or friends) and provide an avenue for those struggling with gambling to seek help and gain recovery.",
+    body: [
+      "John Hartson, as well as being a renowned, world-famous footballer, is a recovering gambling addict.  He has teamed up with Tony Marini, a Psychotherapist and gambling addiction expert, who is a recovering gambling addict himself.  Together they will share their stories, help people recognise the problem (either within themselves or within their families or friends) and provide an avenue for those struggling with gambling to seek help and gain recovery.",
+    ],
     src: "/images/backgroundInfo.jpg",
     alt: "John Hartson Recovery Background Image",
     width: "994",
@@ -10,8 +12,11 @@ export const AskingWhy = [
   },
   {
     id: 2,
-    title: "Groundwork",
-    body: "John and Tony are planning a series of in-house workshops, aimed at reaching out to the community, to recognise the traits and pitfalls of problem gambling, the damage it can cause, and the light at the end of the tunnel. It is hoped that companies, large or small, sports associations and clubs, and other groups that could benefit from hearing personal stories and education material will be interested in hosting their Workshops. These can be tailored to suit the audience as appropriate.",
+    title: "Why us",
+    body: [
+      "John and Tony are planning a series of in-house workshops, aimed at reaching out to the community, to recognise the traits and pitfalls of problem gambling, the damage it can cause, and the light at the end of the tunnel. It is hoped that companies, large or small, sports associations and clubs, and other groups that could benefit from hearing personal stories and education material will be interested in hosting their Workshops. These can be tailored to suit the audience as appropriate.",
+      ,
+    ],
     src: "/images/OurMission5.svg",
     alt: "John Hartson Recovery Our Plan Image",
     width: "1068",
@@ -19,8 +24,29 @@ export const AskingWhy = [
   },
   {
     id: 3,
-    title: "Find Out More",
-    body: "If you are interested in hosting a workshop, you can contact them via the email address on our contact page for details of costs, etc.",
+    title: "Did you know?",
+    body: [
+      "3 times as many people commit suicide through gambling than any other addiction.",
+      ,
+      "There are 500,000 children with a gambling problem in the UK today.",
+      ,
+      "Gambling addiction was increased by 32% in the UK during the Covid-19 pandemic.",
+      ,
+    ],
+    src: "/images/OurMission7.svg",
+    alt: "John Hartson Recovery Know More Image",
+    width: "774",
+    height: "618",
+  },
+  {
+    id: 4,
+    title: "More about us.",
+    body: [
+      "If you are interested in hosting a workshop, you can contact them via the email address on our contact page for details of costs, etc.",
+      "Offer specific and personalised group work sessions.",
+      "Lectures on specific help.",
+      "Help in many areas of addiction and related mental health.",
+    ],
     src: "/images/OurMission7.svg",
     alt: "John Hartson Recovery Know More Image",
     width: "774",

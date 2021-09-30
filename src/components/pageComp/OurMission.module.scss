@@ -1,5 +1,6 @@
 // $primary-color: #6c63fe;
-$primary-color: #f0852b;
+$primary-color: #f6e270;
+$secondary-color: #462522;
 
 .wrapper {
   padding: 0 calc((100% - 1200px) / 2);
@@ -17,11 +18,11 @@ $primary-color: #f0852b;
   width: 60%;
   margin: 0 auto;
   text-align: center;
+  color: $secondary-color;
 
   & h5 {
     font-size: 0.9rem;
     margin-bottom: 10px;
-    color: $primary-color;
   }
 
   & p {
@@ -60,7 +61,7 @@ $primary-color: #f0852b;
   color: #fff !important;
 
   & h5 {
-    color: #fff;
+    color: $secondary-color;
   }
 }
 
@@ -246,7 +247,7 @@ $primary-color: #f0852b;
     @media (min-width: 1000px) {
       &::after {
         content: "";
-        background-image: url("../../../public/images/arrow.svg");
+        background-image: url("../../../public/images/arrow.webp");
         background-repeat: no-repeat;
         background-size: contain;
         position: absolute;
@@ -258,7 +259,7 @@ $primary-color: #f0852b;
       &:nth-of-type(2n) {
         &::after {
           content: "";
-          background-image: url("../../../public/images/arrow2.svg");
+          background-image: url("../../../public/images/arrow2.webp");
           background-repeat: no-repeat;
           background-size: contain;
           top: 25px;
@@ -284,7 +285,7 @@ $primary-color: #f0852b;
       height: 60px;
       flex-shrink: 0;
       border-radius: 23px;
-      background-color: white;
+      background-color: $secondary-color;
       display: flex;
       align-items: center;
       margin-bottom: 25px;
@@ -292,7 +293,8 @@ $primary-color: #f0852b;
       font-weight: 700;
       justify-content: center;
       // color: #234582;
-      color: #6235a2;
+      // color: #6235a2;
+      color: white;
       opacity: 0.9;
     }
     .recoveryText {
@@ -315,7 +317,7 @@ $primary-color: #f0852b;
         font-size: 15px;
         font-weight: 400;
         line-height: 2;
-        color: white;
+        color: $secondary-color;
         opacity: 0.9;
       }
     }

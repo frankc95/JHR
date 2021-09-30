@@ -31,7 +31,7 @@ export default function Home() {
         <HomeComp />
         <OurMission />
         <OurTeam />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Contact />
       </main>
     </>
