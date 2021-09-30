@@ -62,7 +62,7 @@ const OurTeam = () => {
             </div>
           ))}
         </div>
-        <div className={styles.more}>
+        {/* <div className={styles.more}>
           <div className={styles.text}>
             <h4>More about us.</h4>
             <p>
@@ -74,7 +74,7 @@ const OurTeam = () => {
             <p>Lectures on specific help.</p>
           </div>
           <div className={styles.img}></div>
-        </div>
+        </div> */}
       </motion.div>
     </section>
   );

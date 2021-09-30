@@ -1,5 +1,6 @@
 // $primary-color: #8b2bf0;
-$primary-color: #6235a2;
+$primary-color: #f6e270;
+$secondary-color: #462522;
 .wrapper {
   text-align: center;
   margin: 0 -1em;
@@ -52,14 +53,14 @@ $primary-color: #6235a2;
         width: 100px;
         height: 100px;
         // background-color: #20afb1;
-        background-color: $primary-color;
+        background-color: $secondary-color;
         border-radius: 50%;
         animation: play 1.5s ease-out infinite;
         opacity: 0.5;
       }
 
       & span {
-        background-color: rgba($primary-color, 0.5);
+        background-color: rgba($secondary-color, 0.5);
         width: 100px;
         height: 100px;
         text-align: center;

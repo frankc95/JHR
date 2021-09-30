@@ -1,4 +1,5 @@
-$primary-color: #f0852b;
+$primary-color: #f6e270;
+$secondary-color: #462522;
 .wrapper {
   padding: 0 calc((100% - 1200px) / 2);
   padding-top: 100px;
@@ -13,9 +14,13 @@ $primary-color: #f0852b;
   text-align: center;
 
   & h5 {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     margin-bottom: 10px;
     color: $primary-color;
+  }
+
+  & h2 {
+    color: $secondary-color;
   }
 
   & p {
@@ -56,6 +61,7 @@ $primary-color: #f0852b;
       flex-direction: column;
       flex: 77%;
       padding: 2rem;
+      color: $secondary-color;
       & h4 {
         margin-bottom: 1rem;
         padding: 1rem;
@@ -111,7 +117,7 @@ $primary-color: #f0852b;
     text-align: center;
     margin-top: 15px;
     // color: rgba($primary-color, 0.6);
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba($secondary-color, 0.9);
 
     & h6 {
       font-size: 1.3rem;
@@ -131,7 +137,7 @@ $primary-color: #f0852b;
     .social {
       margin-bottom: -15px;
       & a {
-        color: rgba(#6235a2, 0.8);
+        color: $secondary-color;
         // color: rgba(0, 0, 0, 0.6);
       }
     }
@@ -144,7 +150,7 @@ $primary-color: #f0852b;
       // color: rgba($primary-color, 0.8);
       & h6,
       & p {
-        color: rgba(0, 0, 0, 0.9);
+        color: $secondary-color;
       }
     }
 
@@ -159,7 +165,7 @@ $primary-color: #f0852b;
 
         & a {
           // color: rgba(0, 0, 0, 0.9);
-          color: rgba(#6235a2, 0.8);
+          color: rgba($secondary-color, 0.8);
         }
       }
     }

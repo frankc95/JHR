@@ -1,4 +1,5 @@
-$primary-color: #f0852b;
+$primary-color: #f6e270;
+$secondary-color: #462522;
 .wrapper {
   padding: 0 calc((100% - 1200px) / 2);
   padding-top: 100px;
@@ -11,8 +12,8 @@ $primary-color: #f0852b;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba($secondary-color, 0.5);
+    border-bottom: 1px solid rgba($secondary-color, 0.5);
     border-radius: 2px;
     width: 60vw;
     opacity: 0.1;
@@ -25,7 +26,7 @@ $primary-color: #f0852b;
   text-align: center;
 
   & h5 {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     margin-bottom: 10px;
     color: $primary-color;
   }
@@ -92,6 +93,7 @@ $primary-color: #f0852b;
       font-size: 15px;
       font-weight: 700;
       margin-bottom: 10px;
+      color: $secondary-color;
 
       & span {
         color: red;
@@ -115,8 +117,8 @@ $primary-color: #f0852b;
       margin-bottom: 15px;
 
       &:focus {
-        border-color: $primary-color;
-        box-shadow: 0 0 0 2px $primary-color;
+        border-color: rgba($secondary-color, $alpha: 0.7);
+        box-shadow: 0 0 0 2px rgba($secondary-color, $alpha: 0.7);
         outline: none;
       }
     }
@@ -147,7 +149,15 @@ $primary-color: #f0852b;
       transition: all 0.25s;
       font-weight: 500;
       color: white;
-      background-color: $primary-color;
+      background-color: rgba($secondary-color, $alpha: 0.8);
+
+      &:hover {
+        background-color: rgba($secondary-color, $alpha: 0.9);
+      }
+
+      &:focus {
+        transform: scale(0.95);
+      }
     }
   }
 }

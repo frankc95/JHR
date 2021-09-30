@@ -21,8 +21,13 @@ $secondary-color: #462522;
   color: $secondary-color;
 
   & h5 {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     margin-bottom: 10px;
+    color: $primary-color;
+  }
+
+  & h3 {
+    color: $secondary-color;
   }
 
   & p {
@@ -89,9 +94,13 @@ $secondary-color: #462522;
       padding: 0 2rem;
       flex: 50%;
       & h2 {
+        color: $secondary-color;
         @media (max-width: 768px) {
           text-align: center;
         }
+      }
+      & h6 {
+        color: $secondary-color;
       }
       & p {
         margin: 0;
@@ -100,6 +109,7 @@ $secondary-color: #462522;
         font-weight: 400;
         line-height: 1.9;
         padding-top: 1.5rem;
+        color: $secondary-color;
       }
     }
     &:nth-of-type(even) {
@@ -146,9 +156,14 @@ $secondary-color: #462522;
         }
       }
       & img {
-        object-fit: contain;
+        object-fit: cover;
         // object-position: -60px center;
-        object-position: top;
+        object-position: center;
+        border-radius: 8px;
+
+        &:nth-child(1) {
+          object-position: -80px center;
+        }
       }
     }
     .videoModal {
@@ -294,7 +309,7 @@ $secondary-color: #462522;
       justify-content: center;
       // color: #234582;
       // color: #6235a2;
-      color: white;
+      color: #f6e270;
       opacity: 0.9;
     }
     .recoveryText {
