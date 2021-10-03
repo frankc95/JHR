@@ -58,7 +58,7 @@ const OurMission = () => {
               <div className={styles.textWrap}>
                 <h2>{item.title}</h2>
                 {item.body.map((p, i) => (
-                  <div className={item.bullet}>
+                  <div key={i} className={item.bullet}>
                     <Image
                       src="/images/imageMeme.webp"
                       alt="John Hartson Recovery Hero Image"
