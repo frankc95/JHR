@@ -7,6 +7,7 @@ import { RecoverySteps } from "./DB/RecoverySteps";
 import { useInView } from "react-intersection-observer";
 import OurMissionComp from "./innerComp/OurMissionComp";
 import GamblingAddictionComp from "./innerComp/GamblingAddictionComp";
+import More from "./innerComp/More";
 
 const OurMission = () => {
   const { ref, ref1, ref2, inView } = useInView({
@@ -72,6 +73,9 @@ const OurMission = () => {
             </div>
           ))}
         </motion.div>
+
+        {/* Our Mission */}
+        <More />
 
         {/* Our Mission */}
         <OurMissionComp />
