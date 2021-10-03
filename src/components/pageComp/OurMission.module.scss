@@ -144,6 +144,8 @@ $secondary-color: #462522;
         }
         & img {
           object-fit: contain;
+          width: 75px;
+          height: 75px;
         }
       }
     }
