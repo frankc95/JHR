@@ -64,7 +64,7 @@ $secondary-color: #462522;
 
     @media (max-width: 925px) {
       display: flex;
-      margin: 0 15px;
+      margin: 7px 15px;
     }
 
     span,
@@ -132,6 +132,7 @@ $secondary-color: #462522;
     display: flex;
     align-items: baseline;
     padding-right: 2rem;
+    padding-top: 0.4rem;
     transition: all ease-in-out 0.3s;
     justify-content: flex-end;
     flex: 2;
@@ -171,7 +172,7 @@ $secondary-color: #462522;
 
   &.active {
     transition: all 0.3s ease-in-out;
-    min-height: 100px;
+    min-height: 80px;
     background-color: #fff;
     box-shadow: 0 1px 2px rgb(0 0 0 / 6%);
     align-items: center;
@@ -183,6 +184,10 @@ $secondary-color: #462522;
 
     .navItems {
       visibility: visible;
+    }
+
+    .menuToggler {
+      margin: 0px 15px;
     }
 
     .navAction {

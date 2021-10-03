@@ -96,12 +96,14 @@ $secondary-color: #462522;
       height: 100%;
       & h2 {
         color: $secondary-color;
+        margin-bottom: 1rem;
         @media (max-width: 768px) {
           text-align: center;
         }
       }
       & h6 {
         color: $secondary-color;
+        margin-bottom: 0.7rem;
       }
       & p {
         margin: 0;
@@ -389,8 +391,11 @@ $secondary-color: #462522;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (max-width: 380px) {
+  @media (max-width: 500px) {
     grid-template-columns: repeat(1, 1fr);
+    & .recoveryText {
+      text-align: center;
+    }
   }
 }
 

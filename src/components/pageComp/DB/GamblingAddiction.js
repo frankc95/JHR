@@ -29,16 +29,16 @@ export const GamblingAddiction = [
   },
   {
     id: 5,
-    title: "Responsibilities",
-    body: "Do you let down loved ones and break promises?",
-    src: "/images/icons/responsibilities-3.png",
+    title: "Health",
+    body: "Is it affecting your health? Do you have trouble sleeping; feel anxious, depressed or even suicidal after you gamble but still continue?",
+    src: "/images/icons/health.webp",
     alt: "pelikan.baba icon",
   },
   {
     id: 6,
-    title: "Health",
-    body: "Is it affecting your health? Do you have trouble sleeping; feel anxious, depressed or even suicidal after you gamble but still continue?",
-    src: "/images/icons/health.webp",
+    title: "Responsibilities",
+    body: "Do you let down loved ones and break promises?",
+    src: "/images/icons/responsibilities-3.png",
     alt: "pelikan.baba icon",
   },
 ];

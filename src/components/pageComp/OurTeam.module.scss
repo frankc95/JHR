@@ -49,6 +49,7 @@ $secondary-color: #462522;
 
     @media (max-width: 768px) {
       grid-template-columns: repeat(1, 1fr);
+      grid-gap: 10px;
     }
   }
   .more {

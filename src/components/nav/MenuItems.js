@@ -12,7 +12,7 @@ export const MenuItems = [
   {
     title: "Our Team",
     url: "3",
-    offSet: 0,
+    offSet: -50,
   },
   // {
   //   title: "Testimonials",
@@ -22,6 +22,6 @@ export const MenuItems = [
   {
     title: "Contact",
     url: "5",
-    offSet: 0,
+    offSet: -100,
   },
 ];

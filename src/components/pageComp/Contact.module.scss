@@ -18,6 +18,9 @@ $secondary-color: #462522;
     width: 60vw;
     opacity: 0.1;
   }
+  @media (max-width: 768px) {
+    padding-top: 0px;
+  }
 }
 
 .headlineWrap {
@@ -50,6 +53,9 @@ $secondary-color: #462522;
   .formWrap {
     padding: 20px calc((100% - 800px) / 2);
     width: 100%;
+    @media (max-width: 768px) {
+      padding: 20px;
+    }
 
     .double {
       display: flex;
@@ -77,13 +83,14 @@ $secondary-color: #462522;
 
       @media (max-width: 768px) {
         &:last-child {
-          padding-right: 20px;
+          padding-right: 0px;
         }
       }
     }
 
     & textarea {
       min-height: 180px;
+      margin-right: 20px;
     }
 
     .formLabel {
@@ -115,6 +122,10 @@ $secondary-color: #462522;
       border-color: #e5ecf4;
       height: 60px;
       margin-bottom: 15px;
+
+      @media (max-width: 768px) {
+        height: 40px;
+      }
 
       &:focus {
         border-color: rgba($secondary-color, $alpha: 0.7);
