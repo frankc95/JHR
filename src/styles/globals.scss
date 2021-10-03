@@ -155,6 +155,38 @@ p {
   color: $secondary-color;
 }
 
+.cover {
+  & img {
+    object-fit: cover !important;
+  }
+}
+
+.bullet {
+  display: flex;
+  margin: 1rem 0;
+
+  & p {
+    padding: 0 1rem;
+    flex: 2;
+  }
+
+  & img {
+    flex: 1;
+    max-width: 30px !important;
+    object-fit: contain;
+  }
+
+  & > div {
+    display: inline-block !important;
+  }
+}
+
+.bullet0 {
+  & > div {
+    display: none !important;
+  }
+}
+
 // slick
 
 .slick-slide {

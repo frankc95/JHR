@@ -9,7 +9,7 @@ export const RecoverySteps = [
     id: 2,
     no: "02",
     title: "Recognise that help is needed!",
-    body: "Gamblers Anonymous, Counsellors/Therapists, Cognitive Behaviour Therapy (CBT) based professional treatment and self-help CBT models such as SMART Recovery.",
+    body: "Gamblers Anonymous, Counsellors / Therapists, Cognitive Behaviour Therapy (CBT) based professional treatment and self-help CBT models such as SMART Recovery.",
   },
   {
     id: 3,

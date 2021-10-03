@@ -11,7 +11,7 @@ const Home = () => {
     <section id="1" className={styles.wrapper}>
       <div className={styles.videoModal}>
         <Image
-          src="/images/hero.png"
+          src="/images/hero.webp"
           alt="John Hartson Recovery Hero Image"
           width={1920}
           height={1080}

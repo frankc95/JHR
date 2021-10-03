@@ -47,7 +47,7 @@ const OurMission = () => {
         <motion.div className={styles.grid} ref={ref} animate={animation}>
           {AskingWhy.map((item) => (
             <div className={styles.innerGrid} key={item.id}>
-              <div className={styles.graphic}>
+              <div className={`${styles.graphic} ${item.cover}`}>
                 <Image
                   src={item.src}
                   alt={item.alt}
@@ -58,7 +58,15 @@ const OurMission = () => {
               <div className={styles.textWrap}>
                 <h2>{item.title}</h2>
                 {item.body.map((p, i) => (
-                  <p key={i}>{p}</p>
+                  <div className={item.bullet}>
+                    <Image
+                      src="/images/imageMeme.webp"
+                      alt="John Hartson Recovery Hero Image"
+                      width={200}
+                      height={200}
+                    />
+                    <p key={i}>{p}</p>
+                  </div>
                 ))}
               </div>
             </div>
