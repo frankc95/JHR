@@ -1,4 +1,4 @@
-import { FaLinkedin, FaGlobe, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 
 export const OurTeams = [
   {
@@ -10,12 +10,12 @@ export const OurTeams = [
     social: [
       {
         id: 1,
-        url: "",
-        icon: <FaGlobe />,
+        url: "https://www.instagram.com/johnhartson10",
+        icon: <FaInstagram />,
       },
       {
         id: 2,
-        url: "",
+        url: "https://twitter.com/JohnHartson10?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
         icon: <FaTwitter />,
       },
     ],
@@ -29,12 +29,12 @@ export const OurTeams = [
     social: [
       {
         id: 1,
-        url: "",
+        url: "https://www.anthonymarini.co.uk/",
         icon: <FaGlobe />,
       },
       {
         id: 2,
-        url: "",
+        url: "https://www.linkedin.com/in/tony-marini-31487867/",
         icon: <FaLinkedin />,
       },
     ],

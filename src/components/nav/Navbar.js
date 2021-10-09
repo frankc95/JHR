@@ -48,7 +48,7 @@ const Navbar = ({ mobileMenu, setMobileMenu }) => {
           >
             <div className={styles.logo}>
               <Image
-                src="/logo.webp"
+                src="/logo.svg"
                 alt="John Hartson Recovery Logo"
                 width={72}
                 height={16}
