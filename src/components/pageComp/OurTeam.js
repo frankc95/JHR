@@ -55,7 +55,9 @@ const OurTeam = () => {
               <div className={styles.socialWrap}>
                 {item.social.map((social) => (
                   <div className={styles.social} key={social.id}>
-                    <a href={social.url}>{social.icon}</a>
+                    <a aria-label="social-media-links" href={social.url}>
+                      {social.icon}
+                    </a>
                   </div>
                 ))}
               </div>

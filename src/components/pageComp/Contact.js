@@ -128,6 +128,7 @@ const Contact = () => {
               name="message"
               id="message"
               className={styles.formInput}
+              label="text-field"
             />
 
             {sent ? (
