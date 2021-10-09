@@ -1,4 +1,4 @@
-import { FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaGlobe, FaTwitter, FaInstagram } from "react-icons/fa";
 
 export const OurTeams = [
   {
