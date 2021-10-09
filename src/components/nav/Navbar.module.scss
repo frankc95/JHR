@@ -129,10 +129,6 @@ $secondary-color: #462522;
     & a {
       color: $secondary-color;
       font-size: 1.1rem;
-      & > .active {
-        color: $primary-color;
-        filter: drop-shadow(0px 1px 15px $primary-color);
-      }
     }
 
     justify-content: space-around;
@@ -150,8 +146,6 @@ $secondary-color: #462522;
     & > .active {
       color: $primary-color;
       filter: drop-shadow(0px 2px 10px $primary-color);
-      & a {
-      }
     }
   }
 
@@ -162,7 +156,7 @@ $secondary-color: #462522;
     padding-top: 0.4rem;
     transition: all ease-in-out 0.3s;
     justify-content: flex-end;
-    flex: 2;
+    flex: 1;
 
     @media (max-width: 920px) {
       padding-right: 0rem;
