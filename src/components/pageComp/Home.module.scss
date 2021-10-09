@@ -17,24 +17,12 @@ $secondary-color: #462522;
       position: relative;
       z-index: 1;
       object-fit: cover;
-      object-position: top;
-      @media (max-width: 1200px) {
-        max-height: unset !important;
-        max-width: unset !important;
-        min-height: unset !important;
-        min-width: unset !important;
-        left: unset !important;
-        object-fit: initial;
-        height: 100% !important;
-        width: auto !important;
-      }
+      object-position: right;
     }
     & button {
       border: 0;
       cursor: pointer;
       transition: all 0.25s;
-      // color: rgb(167, 155, 155);
-      color: #6b63fe54;
       z-index: 2;
       position: absolute;
       left: 50%;
@@ -52,7 +40,6 @@ $secondary-color: #462522;
         display: block;
         width: 100px;
         height: 100px;
-        // background-color: #20afb1;
         background-color: $secondary-color;
         border-radius: 50%;
         animation: play 1.5s ease-out infinite;

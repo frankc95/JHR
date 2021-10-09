@@ -1,27 +1,32 @@
 export const MenuItems = [
   {
     title: "Home",
-    url: "1",
+    pathname: "/",
+    hash: "1",
     offSet: -120,
   },
   {
     title: "Our Mission",
-    url: "2",
-    offSet: -120,
+    pathname: "/",
+    hash: "2",
+    offSet: 0,
   },
   {
     title: "Our Team",
-    url: "3",
+    pathname: "/",
+    hash: "3",
     offSet: -50,
   },
   // {
   //   title: "Testimonials",
-  //   url: "4",
+  //   pathname: "/",
+  //   hash: "4",
   //   offSet: -120,
   // },
   {
     title: "Contact",
-    url: "5",
+    pathname: "/",
+    hash: "5",
     offSet: -100,
   },
 ];

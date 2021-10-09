@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from "react";
-// import Link from "next/link";
 import Image from "next/image";
-import { Link as RLink } from "react-scroll";
+import Link from "next/link";
 
 import { MenuItems } from "./MenuItems";
 import styles from "./Navbar.module.scss";
-import { VscThreeBars } from "react-icons/vsc";
-import { TiTimes } from "react-icons/ti";
 
 const Navbar = ({ mobileMenu, setMobileMenu }) => {
   const [navbar, setNavbar] = useState(false);
+  const [activeLink, setActiveLink] = useState({ activeIndex: 0 });
 
   useEffect(function mount() {
     function onScroll() {
@@ -41,46 +39,54 @@ const Navbar = ({ mobileMenu, setMobileMenu }) => {
     <>
       <header className={styles.header}>
         <nav className={navbar ? `${styles.nav} ${styles.active}` : styles.nav}>
-          <RLink to="1" smooth={true} duration={1000}>
+          <Link
+            href={{
+              pathname: "/",
+              hash: "1",
+            }}
+            duration={1000}
+          >
             <div className={styles.logo}>
               <Image
-                src="/logo.svg"
+                src="/logo.webp"
                 alt="John Hartson Recovery Logo"
                 width={72}
                 height={16}
               />
             </div>
-          </RLink>
+          </Link>
           <div className={styles.navItems}>
             {MenuItems.map((item, i) => (
-              <RLink
+              <Link
                 key={i}
-                activeClass={styles.active}
-                to={item.url}
+                href={{
+                  pathname: item.pathname,
+                  hash: item.hash,
+                }}
                 spy={true}
-                smooth={true}
                 offset={item.offSet}
                 duration={750}
               >
-                {item.title}
-              </RLink>
+                <a
+                  onClick={() => setActiveLink({ activeIndex: i })}
+                  className={`${i == activeLink.activeIndex && styles.active}`}
+                >
+                  {item.title}
+                </a>
+              </Link>
             ))}
           </div>
           <div className={styles.navAction}>
-            <RLink to="5" smooth={true} duration={1000}>
+            <Link
+              href={{
+                pathname: "/",
+                hash: "5",
+              }}
+              duration={1000}
+            >
               Get In Touch
-            </RLink>
+            </Link>
           </div>
-          {/* <VscThreeBars
-              className={styles.navMobile}
-              onClick={() => setMobileMenu(true)}
-            /> 
-            <TiTimes
-              className={styles.navMobile}
-              onClick={() => setMobileMenu(false)}
-              style={{ fill: "#fff" }}
-            />
-            */}
           {!mobileMenu ? (
             <div
               className={styles.menuToggler}
@@ -109,17 +115,19 @@ const Navbar = ({ mobileMenu, setMobileMenu }) => {
           >
             <div className={styles.mobileItems}>
               {MenuItems.map((item, i) => (
-                <RLink
+                <Link
                   key={i}
                   activeClass={styles.active}
-                  to={item.url}
+                  href={{
+                    pathname: item.pathname,
+                    hash: item.hash,
+                  }}
                   spy={true}
-                  smooth={true}
                   offset={item.offSet}
                   duration={750}
                 >
                   {item.title}
-                </RLink>
+                </Link>
               ))}
             </div>
           </div>

@@ -31,7 +31,12 @@ export default function faq() {
       >
         <h1>FAQs</h1>
         <h4>Sorry, this page doesn&apos;t exist yet...</h4> <br />
-        <Link href="/">
+        <Link
+          href={{
+            pathname: "/",
+            hash: "2",
+          }}
+        >
           <a style={{ zIndex: "2" }}>Go back</a>
         </Link>
       </div>

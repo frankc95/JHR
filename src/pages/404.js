@@ -32,7 +32,12 @@ export default function FotFound() {
         <h1>404</h1>
         <h2>Couldn&apos;t find the page you are looking for...</h2>
         <br />
-        <Link href="/">
+        <Link
+          href={{
+            pathname: "/",
+            hash: "1",
+          }}
+        >
           <a style={{ zIndex: "2" }}>Go back</a>
         </Link>
       </div>

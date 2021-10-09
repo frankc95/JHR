@@ -6,6 +6,7 @@ $secondary-color: #462522;
   padding: 0 calc((100% - 1200px) / 2);
   min-height: 100vh;
   padding-bottom: 100px;
+  padding-top: 100px;
 }
 
 .maxWidth {
@@ -258,33 +259,34 @@ $secondary-color: #462522;
       margin-top: 2rem;
 
       & > div {
-        flex: 1 3;
+        flex: 1 5;
         min-width: 250px;
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: baseline;
         padding: 1rem;
         text-align: left;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 10px #e8e9ec;
         margin: 1rem;
         border-radius: 8px;
 
         & > div {
           flex: 1;
+          max-width: fit-content !important;
+
+          & > div {
+            width: fit-content !important;
+          }
         }
 
         & p {
-          padding: 1rem;
-          flex: 3;
+          padding: 1rem 0.7rem;
+          flex: 5;
         }
 
         & img {
-          max-width: 50px !important;
+          max-width: 1rem !important;
           object-fit: contain;
-
-          @media (max-width: 768px) {
-            max-width: 30px !important;
-          }
         }
       }
     }

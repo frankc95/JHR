@@ -9,6 +9,20 @@ $secondary-color: #462522;
   font-family: "Sora", sans-serif;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background-color: #e8e9ec;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #bfbfbf;
+  border-radius: 20px;
+  border: 3px solid #bfbfbf;
+}
 html,
 body,
 div,

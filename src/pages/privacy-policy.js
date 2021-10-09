@@ -34,7 +34,12 @@ export default function privacyPolicy() {
       >
         <h1>Privacy & Policy</h1>
         <h4>Sorry, this page doesn&apos;t exist yet...</h4> <br />
-        <Link href="/">
+        <Link
+          href={{
+            pathname: "/",
+            hash: "1",
+          }}
+        >
           <a style={{ zIndex: "2" }}>Go back</a>
         </Link>
       </div>

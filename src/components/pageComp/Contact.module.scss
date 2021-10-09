@@ -5,19 +5,6 @@ $secondary-color: #462522;
   padding-top: 100px;
   position: relative;
   padding-bottom: 100px;
-  ::after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    border-top: 1px solid rgba($secondary-color, 0.5);
-    border-bottom: 1px solid rgba($secondary-color, 0.5);
-    border-radius: 2px;
-    width: 60vw;
-    opacity: 0.1;
-  }
   @media (max-width: 768px) {
     padding-top: 0px;
   }
@@ -175,4 +162,19 @@ $secondary-color: #462522;
 
 .hidden {
   display: none;
+}
+.hr {
+  margin-top: 100px;
+  border: 0;
+  height: 1px;
+  width: 80%;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba($secondary-color, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
 }

@@ -41,15 +41,26 @@ $secondary-color: #462522;
   }
 
   .logo {
+    padding-top: 0.5rem;
     padding-left: 15px;
     @media (max-width: 920px) {
       padding: unset;
-      width: 80%;
+      width: fit-content;
       padding-top: 0.5rem;
       padding-left: 0.5rem;
     }
+    & > div {
+      min-width: fit-content !important;
+      & > div {
+        width: fit-content !important;
+
+        & img {
+          width: fit-content;
+        }
+      }
+    }
     & img {
-      min-width: 200px;
+      min-width: 200px !important;
     }
   }
 
@@ -110,6 +121,15 @@ $secondary-color: #462522;
     display: flex;
     font-size: 1.1rem;
 
+    & a {
+      color: $secondary-color;
+      font-size: 1.1rem;
+      & > .active {
+        color: $primary-color;
+        filter: drop-shadow(0px 1px 15px $primary-color);
+      }
+    }
+
     justify-content: space-around;
     width: 100%;
     flex: 5;
@@ -125,6 +145,8 @@ $secondary-color: #462522;
     & > .active {
       color: $primary-color;
       filter: drop-shadow(0px 2px 10px $primary-color);
+      & a {
+      }
     }
   }
 
@@ -148,9 +170,10 @@ $secondary-color: #462522;
     & a {
       background: none;
       padding-top: 10px !important;
-      padding: 10px 20px;
+      padding: 0.5rem 1rem;
       color: $secondary-color;
       border: 2px solid $secondary-color;
+      box-shadow: 0 0 10px #e8e9ec;
       border-radius: 50px;
       outline: none;
       cursor: pointer;
@@ -179,6 +202,10 @@ $secondary-color: #462522;
 
     & a {
       align-items: center;
+      padding-top: unset;
+    }
+
+    .logo {
       padding-top: unset;
     }
 
@@ -226,14 +253,14 @@ $secondary-color: #462522;
     .mobileItems {
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: center;
       height: 50vh;
 
       & a {
         // color: #2da8ff;
         color: $primary-color;
         font-size: 1.4rem;
-        margin-bottom: 1rem;
+        padding: 1rem;
         width: max-content;
 
         &.active {

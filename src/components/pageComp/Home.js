@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "./Home.module.scss";
 import ReactPlayer from "react-player/youtube";
@@ -6,7 +6,15 @@ import { TiTimes } from "react-icons/ti";
 
 const Home = () => {
   const [player, setPlayer] = useState(false);
-  // console.log(player);
+  useEffect(() => {
+    const body = document.querySelector("body");
+
+    if (player === true) {
+      body.classList.add("freeze");
+    } else {
+      body.classList.remove("freeze");
+    }
+  });
   return (
     <section id="1" className={styles.wrapper}>
       <div className={styles.videoModal}>
@@ -37,7 +45,7 @@ const Home = () => {
         Addiction.
       </p> */}
       {player ? (
-        <div className={styles.playerControl}>
+        <div onClick={() => setPlayer(false)} className={styles.playerControl}>
           <TiTimes
             className={styles.closePlayer}
             onClick={() => setPlayer(false)}
