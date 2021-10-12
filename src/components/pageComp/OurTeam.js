@@ -66,7 +66,7 @@ const OurTeam = () => {
         </div>
         {/* <div className={styles.more}>
           <div className={styles.text}>
-            <h4>More about us.</h4>
+            <h4>freedom fromfrom.</h4>
             <p>
               If you are interested in hosting a workshop, you can contact us
               via our contact form below.

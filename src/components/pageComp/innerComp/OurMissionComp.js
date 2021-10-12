@@ -43,7 +43,7 @@ const OurMissionComp = () => {
         <div className={styles.textWrap}>
           <div className={styles.headline2Wrap}>
             <h5>OUR MISSION</h5>
-            <h2>Freedom from active addiction takes time.</h2>
+            <h2>Freedom from active addiction takes time</h2>
           </div>
           <p>
             There are various methods that can be used to help with the

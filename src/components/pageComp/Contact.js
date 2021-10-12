@@ -48,8 +48,8 @@ const Contact = () => {
         <h5>have any questions?</h5>
         <h2>Get in touch with us!</h2>
         <p>
-          If you are interested in hosting a workshop, you can contact them via
-          the email address on our contact page for details of costs, etc.
+          If you are interested in hosting a workshop, you can contact us via
+          the contact form for details on costs, availability, etc.
         </p>
       </motion.div>
       <motion.div className={styles.grid} ref={ref} animate={animation}>
