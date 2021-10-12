@@ -42,7 +42,7 @@ $secondary-color: #462522;
   text-align: left;
 
   & h5 {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     margin-bottom: 10px;
     color: $primary-color;
   }
@@ -59,7 +59,7 @@ $secondary-color: #462522;
 
 .background {
   background-color: $primary-color;
-  background-image: url("../../../public/images/patternBG.png");
+  background-image: url("../../../public/images/patternBG.webp");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
