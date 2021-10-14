@@ -41,7 +41,7 @@ const More = () => {
             {item.body.map((p, i) => (
               <div key={i} className={item.bullet}>
                 <Image
-                  src="/images/imageMeme.webp"
+                  src="/images/imageMeme.png"
                   alt="John Hartson Recovery Hero Image"
                   width={200}
                   height={200}
