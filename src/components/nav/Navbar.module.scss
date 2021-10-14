@@ -7,13 +7,17 @@ $secondary-color: #462522;
   align-items: flex-start;
   padding: 0.5rem calc((100vw - 1200px) / 2);
   z-index: 466666666666666666;
-  position: initial;
+  position: absolute;
   width: 100vw;
   top: 0%;
   left: 0;
   transition: all 0.3s ease-in-out;
   min-height: 70px;
   background-color: transparent;
+
+  @media (max-width: 1000px) {
+    position: initial;
+  }
 
   & a,
   h1 {
