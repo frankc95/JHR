@@ -316,7 +316,7 @@ $secondary-color: #462522;
     @media (min-width: 1000px) {
       &::after {
         content: "";
-        background-image: url("../../../public/images/arrow.webp");
+        background-image: url("../../../public/images/arrow.png");
         background-repeat: no-repeat;
         background-size: contain;
         position: absolute;
@@ -328,7 +328,7 @@ $secondary-color: #462522;
       &:nth-of-type(2n) {
         &::after {
           content: "";
-          background-image: url("../../../public/images/arrow2.webp");
+          background-image: url("../../../public/images/arrow2.png");
           background-repeat: no-repeat;
           background-size: contain;
           top: 25px;
