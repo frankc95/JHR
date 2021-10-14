@@ -31,7 +31,7 @@ export const GamblingAddiction = [
     id: 5,
     title: "Health",
     body: "Is it affecting your health? Do you have trouble sleeping; feel anxious, depressed or even suicidal after you gamble but still continue?",
-    src: "/images/icons/health.webp",
+    src: "/images/icons/health.png",
     alt: "pelikan.baba icon",
   },
   {

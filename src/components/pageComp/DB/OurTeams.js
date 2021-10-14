@@ -3,7 +3,7 @@ import { FaLinkedin, FaGlobe, FaTwitter, FaInstagram } from "react-icons/fa";
 export const OurTeams = [
   {
     id: 1,
-    src: "/images/john.webp",
+    src: "/images/john.png",
     alt: "John Hartson Profile Picture",
     name: "John Hartson",
     title: "CEO and Founder",
@@ -22,7 +22,7 @@ export const OurTeams = [
   },
   {
     id: 2,
-    src: "/images/tony.webp",
+    src: "/images/tony.png",
     alt: "Anthony Marini Profile Picture",
     name: "Anthony Marini",
     title: "CEO and Founder",

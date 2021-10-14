@@ -34,7 +34,7 @@ const OurMissionComp = () => {
       <div className={styles.innerGrid}>
         <div className={styles.videoModal}>
           <Image
-            src="/images/MindMap.webp"
+            src="/images/MindMap.png"
             alt="word clouds graphic"
             width={628}
             height={628}

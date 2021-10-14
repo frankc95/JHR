@@ -7,12 +7,12 @@ $secondary-color: #462522;
   align-items: flex-start;
   padding: 0.5rem calc((100vw - 1200px) / 2);
   z-index: 466666666666666666;
-  position: absolute;
+  position: initial;
   width: 100vw;
   top: 0%;
   left: 0;
   transition: all 0.3s ease-in-out;
-  min-height: 120px;
+  min-height: 70px;
   background-color: transparent;
 
   & a,
@@ -131,11 +131,11 @@ $secondary-color: #462522;
       font-size: 1.1rem;
     }
 
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
-    flex: 5;
+    flex: 7;
 
-    @media (max-width: 1000px) {
+    @media (max-width: 900px) {
       flex: 7;
     }
 
@@ -156,7 +156,7 @@ $secondary-color: #462522;
     padding-top: 0.4rem;
     transition: all ease-in-out 0.3s;
     justify-content: flex-end;
-    flex: 1;
+    flex: 2;
 
     @media (max-width: 920px) {
       padding-right: 0rem;

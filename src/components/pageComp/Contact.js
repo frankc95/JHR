@@ -49,7 +49,7 @@ const Contact = () => {
         <h2>Get in touch with us!</h2>
         <p>
           If you are interested in hosting a workshop, you can contact us via
-          the contact form for details on costs, availability, etc.
+          the contact below.
         </p>
       </motion.div>
       <motion.div className={styles.grid} ref={ref} animate={animation}>
