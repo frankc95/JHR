@@ -23,7 +23,7 @@ $secondary-color: #462522;
       cursor: pointer;
     }
     & a {
-      padding-top: 50px;
+      padding-top: 1rem;
       display: flex;
       color: rgba($primary-color, 0.6);
 
@@ -58,6 +58,17 @@ $secondary-color: #462522;
       &:hover {
         color: rgba(0, 0, 0, 1);
       }
+    }
+  }
+  .copy {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    & p {
+      margin: 0.5rem;
     }
   }
 }

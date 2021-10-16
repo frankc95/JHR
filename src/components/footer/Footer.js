@@ -5,6 +5,8 @@ import styles from "./Footer.module.scss";
 import { FaHeart } from "react-icons/fa";
 
 const footer = () => {
+  let n = new Date();
+  let y = n.getFullYear();
   return (
     <>
       <footer className={styles.footer}>
@@ -46,12 +48,16 @@ const footer = () => {
               FAQs
             </Link>
           </div>
-          <a href="https://www.linkedin.com/in/jakub-blazewicz">
-            Made with
-            <span>
-              <FaHeart />
-            </span>
-          </a>
+          <div className={styles.copy}>
+            <p>Copyright &copy; {y} John Hartson Recovery Workshop</p>
+            <p>All rights reserved.</p>
+            <a href="https://www.linkedin.com/in/jakub-blazewicz">
+              Made with
+              <span>
+                <FaHeart />
+              </span>
+            </a>
+          </div>
         </div>
       </footer>
     </>
