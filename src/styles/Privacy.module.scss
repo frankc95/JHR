@@ -1,0 +1,50 @@
+$primary-color: #ffd900;
+$secondary-color: #462522;
+
+.wrapper {
+  min-height: 100vh;
+  padding: 7rem 2rem 0rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  .inner {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    height: 100%;
+    @media (max-width: 1200px) {
+      padding: 0 2rem;
+    }
+    @media (max-width: 640px) {
+      padding: 0 0.2rem;
+    }
+    & h3,
+    & h4 {
+      color: $primary-color;
+      color: #462522;
+      margin: 1rem 0;
+    }
+    & p,
+    & li {
+      margin: 0.5rem 0;
+      min-width: 0;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.9;
+      color: #462522;
+      max-width: 1000px;
+      text-align: justify;
+    }
+    & li {
+      &::before {
+        background-image: url("../../public/images/imageMeme.png");
+        background-size: 0.8rem 0.8rem;
+        display: inline-block;
+        width: 0.8rem;
+        height: 0.8rem;
+        margin: 0 1rem;
+        content: "";
+      }
+    }
+  }
+}

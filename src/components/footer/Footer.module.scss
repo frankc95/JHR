@@ -40,17 +40,21 @@ $secondary-color: #462522;
   .otherLinks {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
     padding: 0 calc((100% - 500px) / 2);
     font-size: 0.9rem;
 
     @media (max-width: 768px) {
-      justify-content: space-evenly;
+      justify-content: center;
     }
 
     & a {
       color: rgba(0, 0, 0, 0.7);
       cursor: pointer;
+      min-width: fit-content;
+      margin: 0.5rem 0;
+      padding: 0 0.5rem;
       &:hover {
         color: rgba(0, 0, 0, 1);
       }

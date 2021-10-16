@@ -35,20 +35,15 @@ const footer = () => {
             >
               Home
             </Link>
-            <Link href="/faq" duration={1000}>
-              FAQs
-            </Link>
+
             <Link href="/privacy-policy" duration={1000}>
               Privacy & Policy
             </Link>
-            <Link
-              href={{
-                pathname: "/",
-                hash: "5",
-              }}
-              duration={1000}
-            >
-              Contact
+            <Link href="/terms-conditions" duration={1000}>
+              Terms & Conditions
+            </Link>
+            <Link href="/faq" duration={1000}>
+              FAQs
             </Link>
           </div>
           <a href="https://www.linkedin.com/in/jakub-blazewicz">
