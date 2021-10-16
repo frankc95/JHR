@@ -37,8 +37,8 @@ export default function termsConditions() {
             conditions, please do not use our website.
           </p>
           <p>
-            The terms 'our', 'us' or 'we' refers to the owner of the website.
-            The term 'you' refers to the user or viewer of our website.
+            The terms "our", "us" or "we" refers to the owner of the website.
+            The term "you" refers to the user or viewer of our website.
           </p>
           <p>
             The use of this website is subject to the following terms of use:

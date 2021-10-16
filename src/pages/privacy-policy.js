@@ -30,8 +30,8 @@ export default function privacyPolicy() {
           <h3>Privacy Policy</h3>
           <p>
             This privacy policy sets out how we use and protect any information
-            that you give us when you use this website. The terms 'our', 'us' or
-            'we' refers to the owner of the website. The term 'you' refers to
+            that you give us when you use this website. The terms "our", "us" or
+            "we" refers to the owner of the website. The term "you" refers to
             the user or viewer of our website.
           </p>
           <p>
@@ -90,12 +90,12 @@ export default function privacyPolicy() {
           <h4>How we use cookies</h4>
           <p>
             A cookie is a small file which asks permission to be placed on your
-            computer's hard drive. Once you agree, the file is added and the
-            cookie helps analyse web traffic or lets you know when you visit a
-            particular site. Cookies allow web applications to respond to you as
-            an individual. The web application can tailor its operations to your
-            needs, likes and dislikes by gathering and remembering information
-            about your preferences.
+            computer&apos;s hard drive. Once you agree, the file is added and
+            the cookie helps analyse web traffic or lets you know when you visit
+            a particular site. Cookies allow web applications to respond to you
+            as an individual. The web application can tailor its operations to
+            your needs, likes and dislikes by gathering and remembering
+            information about your preferences.
           </p>
           <p>
             We use traffic log cookies to identify which pages are being used.
