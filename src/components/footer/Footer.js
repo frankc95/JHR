@@ -44,9 +44,9 @@ const footer = () => {
             <Link href="/terms-conditions" duration={1000}>
               Terms & Conditions
             </Link>
-            <Link href="/faq" duration={1000}>
+            {/* <Link href="/faq" duration={1000}>
               FAQs
-            </Link>
+            </Link> */}
           </div>
           <div className={styles.copy}>
             <p>Copyright &copy; {y} John Hartson Recovery Workshop</p>
