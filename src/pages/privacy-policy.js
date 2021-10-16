@@ -30,9 +30,10 @@ export default function privacyPolicy() {
           <h3>Privacy Policy</h3>
           <p>
             This privacy policy sets out how we use and protect any information
-            that you give us when you use this website. The terms "our", "us" or
-            "we" refers to the owner of the website. The term "you" refers to
-            the user or viewer of our website.
+            that you give us when you use this website. The terms
+            &quot;our&quot;, &quot;us&quot; or &quot;we&quot; refers to the
+            owner of the website. The term &quot;you&quot; refers to the user or
+            viewer of our website.
           </p>
           <p>
             We are committed to ensuring that your privacy is protected. Should
