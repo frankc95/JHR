@@ -10,6 +10,7 @@ const footer = () => {
   return (
     <>
       <footer className={styles.footer}>
+        <hr className={styles.hr} />
         <div className={styles.inner}>
           <Link
             href={{
@@ -37,13 +38,13 @@ const footer = () => {
             >
               Home
             </Link>
-
-            <Link href="/privacy-policy" duration={1000}>
-              Privacy & Policy
-            </Link>
             <Link href="/terms-conditions" duration={1000}>
               Terms & Conditions
             </Link>
+            <Link href="/privacy-policy" duration={1000}>
+              Privacy & Policy
+            </Link>
+
             {/* <Link href="/faq" duration={1000}>
               FAQs
             </Link> */}

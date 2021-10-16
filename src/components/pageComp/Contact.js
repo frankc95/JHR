@@ -142,7 +142,6 @@ const Contact = () => {
             <button>Submit</button>
           </form>
         </div>
-        <hr className={styles.hr} />
       </motion.div>
     </section>
   );
