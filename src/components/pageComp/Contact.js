@@ -25,7 +25,7 @@ const Contact = () => {
       animation.start({
         scale: 0.8,
         opacity: 0,
-        y: -50,
+        y: -0,
       });
     }
   }, [inView, animation]);

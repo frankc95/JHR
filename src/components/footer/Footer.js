@@ -29,6 +29,12 @@ const footer = () => {
             </div>
           </Link>
           <div className={styles.otherLinks}>
+            <Link href="/terms-conditions" duration={1000}>
+              Terms & Conditions
+            </Link>
+            <Link href="/privacy-policy" duration={1000}>
+              Privacy & Policy
+            </Link>
             <Link
               href={{
                 pathname: "/",
@@ -38,13 +44,6 @@ const footer = () => {
             >
               Home
             </Link>
-            <Link href="/terms-conditions" duration={1000}>
-              Terms & Conditions
-            </Link>
-            <Link href="/privacy-policy" duration={1000}>
-              Privacy & Policy
-            </Link>
-
             {/* <Link href="/faq" duration={1000}>
               FAQs
             </Link> */}
