@@ -17,6 +17,8 @@ $secondary-color: #462522;
 
   @media (max-width: 1000px) {
     position: initial;
+    border-bottom: 2px solid $primary-color;
+    background-color: white;
   }
 
   & a,

@@ -68,6 +68,7 @@ $secondary-color: #462522;
       }
 
       @media (max-width: 768px) {
+        padding-right: 0px;
         &:last-child {
           padding-right: 0px;
         }

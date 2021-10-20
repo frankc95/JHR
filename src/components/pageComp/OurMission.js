@@ -42,7 +42,7 @@ const OurMission = () => {
         <motion.div ref={ref} animate={animation}>
           <div className={styles.headlineWrap}>
             <h5>why?</h5>
-            <h2>What benefits them, benefits you</h2>
+            <h2>Healthy Minds for a Healthy Workplace</h2>
           </div>
         </motion.div>
         <motion.div className={styles.grid} ref={ref} animate={animation}>
@@ -88,7 +88,7 @@ const OurMission = () => {
         {/* Gambling Steps */}
         <div className={`${styles.grid} ${styles.background}`}>
           <div className={styles.headlineWrap}>
-            <h5>REcovery Steps</h5>
+            <h5>Recovery Steps</h5>
             <h3>How do I stop my problem gambling?</h3>
           </div>
           <div className={styles.recoveryGrid}>

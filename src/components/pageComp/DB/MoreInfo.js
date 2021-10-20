@@ -13,7 +13,7 @@ export const MoreInfo = [
   },
   {
     id: 2,
-    title: "More about us",
+    title: "Read More",
     body: [
       "Offer specific and personalised group work sessions.",
       "Lectures on specific help.",

@@ -36,6 +36,15 @@ const More = () => {
         <div key={item.id} className={styles.bulletWrap}>
           <div className={styles.title}>
             <h2>{item.title}</h2>
+            <span className={styles.shape} />
+            <div className={styles.img}>
+            <Image
+                  src="/images/imageMeme.png"
+                  alt="John Hartson Recovery Hero Image"
+                  width={200}
+                  height={200}
+                />
+            </div>
           </div>
           <div className={styles.bullets}>
             {item.body.map((p, i) => (
