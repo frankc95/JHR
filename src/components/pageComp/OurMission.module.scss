@@ -254,32 +254,32 @@ $secondary-color: #462522;
     margin-top: 3rem;
 
     .title {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-width: 120px;
-      max-width: 250px;
-      min-height: 80px;
-      position: relative;
-      border: 4px solid #000000;
-      border-radius: 10px;
-      position: relative;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // min-width: 120px;
+      // max-width: 250px;
+      // min-height: 80px;
+      // position: relative;
+      // border: 4px solid #000000;
+      // border-radius: 10px;
+      // position: relative;
 
-      & h2 {
-        padding: 1rem .3rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-size: 3.5rem;
-        line-height: .8;
-        text-align: center;
-      }
+      // & h2 {
+      //   padding: 1rem .3rem;
+      //   font-weight: bold;
+      //   text-transform: uppercase;
+      //   font-size: 3.5rem;
+      //   line-height: .8;
+      //   text-align: center;
+      // }
 
       .img {
         position: absolute;
-        bottom: -2px;
+        bottom: 0px;
         right: -4px;
         height: 37px;
-        width: 40px;
+        width: 42px;
       }
 
       .shape {
@@ -296,7 +296,7 @@ $secondary-color: #462522;
           position: absolute;
           width: 25px;
           height: 25px;
-          background: #fff;
+          background: #fdfdfd;
           transform: translateX(-50%) translateY(-50%) rotate(
       45deg);
           left: 50%;

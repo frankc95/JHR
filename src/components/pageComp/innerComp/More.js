@@ -35,16 +35,12 @@ const More = () => {
       {MoreInfo.map((item) => (
         <div key={item.id} className={styles.bulletWrap}>
           <div className={styles.title}>
-            <h2>{item.title}</h2>
-            <span className={styles.shape} />
-            <div className={styles.img}>
             <Image
-                  src="/images/imageMeme.png"
-                  alt="John Hartson Recovery Hero Image"
+                  src={item.src}
+                  alt="card img"
                   width={200}
-                  height={200}
+                  height={100}
                 />
-            </div>
           </div>
           <div className={styles.bullets}>
             {item.body.map((p, i) => (

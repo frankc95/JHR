@@ -42,7 +42,7 @@ const OurMission = () => {
         <motion.div ref={ref} animate={animation}>
           <div className={styles.headlineWrap}>
             <h5>why?</h5>
-            <h2>Healthy Minds for a Healthy Workplace</h2>
+            <h2>Healthy Minds, Healthy Workplace</h2>
           </div>
         </motion.div>
         <motion.div className={styles.grid} ref={ref} animate={animation}>
