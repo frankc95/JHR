@@ -25,6 +25,7 @@ export default function Home() {
         <meta property="og:url" content="https://jhrocevory.co.uk/" />
         <meta property="og:type" content="website" />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="google-site-verification" content="b2ndndZkZz7_TY_Vwjqn5_D7UiCvR8aSwav9v1HLKWY" />
         <html lang="en-GB"></html>
       </Head>
 
