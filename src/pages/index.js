@@ -13,6 +13,7 @@ export default function Home() {
     <>
       <Head>
         <title>John Hartson Recovery</title>
+        <meta name="keywords" content="gambling addiction, compulsive gambler, gambling help, gambling addiction help, gambling problem, gamblers in recovery, gambling addiction treatment, stop gambling, pathological gambling, betting addiction, casino addiction, stop gambling addiction, help to stop gambling, gambling addiction recovery, gambling problem help, gambling help number, ">
         <meta
           name="description"
           content="John Hartson's Gambling and Addiction Workshop. Make your next game recovery!"
