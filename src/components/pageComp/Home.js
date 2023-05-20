@@ -55,7 +55,7 @@ const Home = () => {
             className={styles.closePlayer}
             onClick={() => setPlayer(false)}
           />
-          <ReactPlayer controls url="https://youtu.be/2b3UVwR9gw0" />
+          <ReactPlayer controls url="https://youtu.be/bqLjrCR1Emc" />
         </div>
       ) : null}
     </section>
