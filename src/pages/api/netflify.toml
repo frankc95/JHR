@@ -2,7 +2,9 @@
   publish = ".next"
   functions = './functions/'
 
-  [[redirects]]
+[[redirects]]
   from = "/*"
   to = "index.html"
   status = 200
+
+publish = "build"
