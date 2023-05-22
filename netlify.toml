@@ -1,4 +1,5 @@
 [build]
+  command = "npm build"
   publish = "dist"
   functions = './functions/'
 [[plugins]]
