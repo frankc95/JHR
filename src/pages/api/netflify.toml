@@ -1,3 +1,5 @@
 [build]
-  publish = ".next"
+  publish = "dist"
   functions = './functions/'
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
