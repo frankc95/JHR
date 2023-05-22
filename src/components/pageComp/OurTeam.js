@@ -35,16 +35,20 @@ const OurTeam = () => {
       {/* Our Team */}
       <motion.div className={styles.headlineWrap} ref={ref} animate={animation}>
         <div className={styles.titleWrap}>
-          <img
+          <Image
             className={styles.left}
             src="/images/heart.svg"
             alt="heart icon"
+            height={30}
+            width={30}
           />
           <h3>OUR TEAM</h3>
-          <img
+          <Image
             className={styles.right}
             src="/images/heart.svg"
             alt="heart icon"
+            height={30}
+            width={30}
           />
         </div>
       </motion.div>

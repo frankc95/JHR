@@ -66,16 +66,20 @@ const VideoComp = () => {
       >
         <div className={styles.contentWrap}>
           <div className={styles.titleWrap}>
-            <img
+            <Image
               className={styles.left}
               src="/images/heart.svg"
               alt="heart icon"
+              height={30}
+              width={30}
             />
             <h3>REAL, RELATABLE, RAW</h3>
-            <img
+            <Image
               className={styles.right}
               src="/images/heart.svg"
               alt="heart icon"
+              height={30}
+              width={30}
             />
           </div>
 
@@ -134,16 +138,20 @@ const VideoComp = () => {
         variants={rowVariants}
       >
         <div className={styles.titleWrap}>
-          <img
+          <Image
             className={styles.left}
             src="/images/heart.svg"
             alt="heart icon"
+            height={30}
+            width={30}
           />
           <h3>HOW OUR WORKSHOPS CAN HELP YOU</h3>
-          <img
+          <Image
             className={styles.right}
             src="/images/heart.svg"
             alt="heart icon"
+            height={30}
+            width={30}
           />
         </div>
         <div className={styles.left}>

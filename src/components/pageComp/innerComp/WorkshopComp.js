@@ -86,33 +86,41 @@ const WorkshopComp = () => {
         variants={paraVariants}
       >
         <div className={styles.quote}>
-          <img
+          <Image
             className={styles.left}
             src="/images/quote.svg"
             alt="quote icon"
+            width={55}
+            height={45}
           />
           <h3>
             5 Million British people have experienced harm linked to gambling. –
             The Guardian, 2020
           </h3>
-          <img
+          <Image
             className={styles.right}
             src="/images/quote.svg"
             alt="quote icon"
+            width={55}
+            height={45}
           />
         </div>
         <div className={styles.contentWrap}>
           <div className={styles.titleWrap}>
-            <img
+            <Image
               className={styles.left}
               src="/images/heart.svg"
               alt="heart icon"
+              height={30}
+              width={30}
             />
             <h3>WHO IS OUR WORKSHOP FOR?</h3>
-            <img
+            <Image
               className={styles.right}
               src="/images/heart.svg"
               alt="heart icon"
+              height={30}
+              width={30}
             />
           </div>
           <p>
@@ -172,9 +180,9 @@ const WorkshopComp = () => {
           <object data="/images/explmark.svg" width="30" height="100"></object>
           <div className={styles.pWrap}>
             <p>
-              <span>More than 85% </span> of UK businesses have alcohol and
-              substance misuse policies – but less
-              than 5% have a policy for gambling.
+              <span>More than 85% </span> of UK businesses have alcohol and
+              substance misuse policies – but less than 5% have a policy for
+              gambling.
             </p>
             <p className={styles.sign}>
               – The Harmful Gambling Workplace Charter

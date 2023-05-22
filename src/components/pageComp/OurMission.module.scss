@@ -72,21 +72,13 @@ $secondary-color: #462522;
       font-family: $dmSansItalic;
       text-align: center;
       max-width: 870px;
+      gap: 1rem;
 
-      .left {
-        margin-right: 1rem;
-      }
       .right {
-        margin-left: 1rem;
         transform: rotate(-180deg);
       }
-      @media (max-width: 996px) {
+      @media (max-width: 1200px) {
         max-width: 700px;
-      }
-      @media (max-width: 675px) {
-        & img {
-          max-width: 1.5rem;
-        }
       }
     }
     @media (max-width: 675px) {
@@ -152,9 +144,6 @@ $secondary-color: #462522;
         display: flex;
         align-items: baseline;
         gap: 1rem;
-        & img {
-          max-height: 1.75rem;
-        }
         & h3 {
           font-family: $madeWaffleSoft;
         }
@@ -248,9 +237,6 @@ $secondary-color: #462522;
       margin-top: 2rem;
       .titleWrap {
         text-align: center;
-        & img {
-          max-width: 1.5rem;
-        }
       }
     }
   }
@@ -292,9 +278,6 @@ $secondary-color: #462522;
       margin-bottom: 1rem;
       width: 100%;
       gap: 1rem;
-      & img {
-        height: 1.75rem;
-      }
       & h3 {
         font-family: $madeWaffleSoft;
       }
@@ -414,9 +397,6 @@ $secondary-color: #462522;
       margin-top: 3rem;
       .titleWrap {
         align-items: unset;
-        & img {
-          max-width: 1.5rem;
-        }
       }
       .left {
         .contentWrap {
@@ -472,15 +452,11 @@ $secondary-color: #462522;
       font-family: $dmSansItalic;
       text-align: center;
       max-width: 980px;
+      gap: 1rem;
       & img {
         filter: grayscale(1) contrast(100);
       }
-      .left {
-        margin-right: 1rem;
-      }
-
       .right {
-        margin-left: 1rem;
         transform: rotate(-180deg);
       }
       @media (min-width: 1200px) {
@@ -503,9 +479,6 @@ $secondary-color: #462522;
         margin-bottom: 5rem;
         width: 100%;
         gap: 1rem;
-        & img {
-          height: 1.75rem;
-        }
         & h3 {
           font-family: $madeWaffleSoft;
         }
@@ -541,9 +514,6 @@ $secondary-color: #462522;
       margin-top: 3rem;
       .quote {
         padding: 3rem 0;
-        & img {
-          max-width: 1.5rem;
-        }
       }
       .contentWrap {
         .titleWrap {
@@ -744,9 +714,7 @@ $secondary-color: #462522;
       align-items: baseline;
       justify-content: center;
       gap: 1rem;
-      & img {
-        max-height: 1.75rem;
-      }
+
       & h3 {
         font-family: $madeWaffleSoft;
       }

@@ -54,16 +54,20 @@ const TestimonialsNew = () => {
         variants={rowVariants}
       >
         <div className={styles.titleWrap}>
-          <img
+          <Image
             className={styles.left}
             src="/images/heart.svg"
             alt="heart icon"
+            height={30}
+            width={30}
           />
           <h3>WHAT BUSINESSES LIKE YOURS HAVE SAID</h3>
-          <img
+          <Image
             className={styles.right}
             src="/images/heart.svg"
             alt="heart icon"
+            height={30}
+            width={30}
           />
         </div>
 

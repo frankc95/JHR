@@ -11,7 +11,6 @@ import More from "./innerComp/More";
 import VideoComp from "./innerComp/VideoComp";
 import WorkshopComp from "./innerComp/WorkshopComp";
 import { ReactComponent as Quote } from "../../../public/images/quote.svg";
-import GamblingProblem from "./innerComp/GamblingProblem";
 
 const paraVariants = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
@@ -23,7 +22,7 @@ const rowVariants = {
     opacity: 1,
     scale: 1,
     y: 0,
-    transition: { duration: 0.5 },
+    transition: { duration: 0.5, delay: 0.4 },
     rotate: 0,
   },
   hidden: { opacity: 0, scale: 0.9, y: 100 },
@@ -68,18 +67,22 @@ const OurMission = () => {
             </h3>
 
             <div className={styles.quote}>
-              <img
+              <Image
                 className={styles.left}
                 src="/images/quote.svg"
                 alt="quote icon"
+                width={55}
+                height={45}
               />
               <h3>
                 I didn’t realise I had a problem. You never do. – John Hartson
               </h3>
-              <img
+              <Image
                 className={styles.right}
                 src="/images/quote.svg"
                 alt="quote icon"
+                width={55}
+                height={45}
               />
             </div>
           </div>
@@ -158,9 +161,6 @@ const OurMission = () => {
 
         {/* Workshops */}
         <WorkshopComp />
-
-        {/* Gambling Problem */}
-        <GamblingProblem />
 
         {/* Our Mission */}
         {/* <More /> */}

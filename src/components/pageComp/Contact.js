@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import styles from "./Contact.module.scss";
+import Image from "next/image";
 
 const paraVariants = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
@@ -65,16 +66,20 @@ const Contact = () => {
       >
         <div className={styles.contentWrap}>
           <div className={styles.titleWrap}>
-            <img
+            <Image
               className={styles.left}
               src="/images/heart.svg"
               alt="heart icon"
+              width={30}
+              height={30}
             />
             <h3>GET IN TOUCH</h3>
-            <img
+            <Image
               className={styles.right}
               src="/images/heart.svg"
               alt="heart icon"
+              width={30}
+              height={30}
             />
           </div>
           <p>
