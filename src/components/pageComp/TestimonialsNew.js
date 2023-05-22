@@ -22,8 +22,6 @@ const rowVariants = {
   hidden: { opacity: 0, scale: 0.9, y: 100 },
 };
 
-console.log("running");
-
 const TestimonialsNew = () => {
   const animation = useAnimation();
   const animation2 = useAnimation();
