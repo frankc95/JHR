@@ -19,9 +19,7 @@ const OurTeam = () => {
         scale: 1,
         opacity: 1,
         y: 0,
-        transition: {
-          delay: 0.4,
-        },
+        transition: {},
       });
     }
     if (!inView) {
@@ -36,8 +34,19 @@ const OurTeam = () => {
     <section id="3" className={styles.wrapper}>
       {/* Our Team */}
       <motion.div className={styles.headlineWrap} ref={ref} animate={animation}>
-        <h5>our team</h5>
-        <h2>Our most qualified and talented individuals</h2>
+        <div className={styles.titleWrap}>
+          <img
+            className={styles.left}
+            src="/images/heart.svg"
+            alt="heart icon"
+          />
+          <h3>OUR TEAM</h3>
+          <img
+            className={styles.right}
+            src="/images/heart.svg"
+            alt="heart icon"
+          />
+        </div>
       </motion.div>
       <motion.div className={styles.grid} ref={ref} animate={animation}>
         <div className={styles.innerGrid}>

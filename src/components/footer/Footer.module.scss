@@ -26,10 +26,12 @@ $secondary-color: #462522;
     & a {
       padding-top: 1rem;
       display: flex;
-      color: rgba($primary-color, 0.6);
+      color: rgba($secondary-color, 0.6);
+      transition: all ease-in 0.2s;
 
       &:hover {
-        color: rgba($primary-color, 0.8);
+        color: rgba($secondary-color, 0.8);
+        transition: all ease-in 0.2s;
       }
 
       & span {

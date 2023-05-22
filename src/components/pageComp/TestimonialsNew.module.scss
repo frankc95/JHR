@@ -1,0 +1,61 @@
+.testimonialWrapper {
+  @import "../../styles/globals.scss";
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+
+  @media (max-width: 996px) {
+    margin-top: 3rem;
+  }
+
+  .titleWrap {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    & img {
+      max-height: 1.75rem;
+    }
+    & h3 {
+      font-family: $madeWaffleSoft;
+    }
+    .left {
+      transform: rotate(-90deg);
+    }
+    @media (max-width: 675px) {
+      align-items: unset;
+      gap: 0.5rem;
+    }
+  }
+
+  .carouselWrap {
+    max-width: 800px;
+    padding: 1rem 0;
+    .inner {
+      box-shadow: 0 0 10px rgba(#000000, 0.25);
+      border-radius: 20px;
+      overflow: hidden;
+
+      .imgWrap {
+        & img {
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+      .contentWrap {
+        padding: 1rem;
+        & p {
+          max-width: 600px;
+          margin: 0 auto;
+          text-align: center;
+          & span {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

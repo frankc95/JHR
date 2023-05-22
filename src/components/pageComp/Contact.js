@@ -3,32 +3,44 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import styles from "./Contact.module.scss";
 
+const paraVariants = {
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+  hidden: { opacity: 0, scale: 0.8 },
+};
+
+const rowVariants = {
+  visible: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: { duration: 0.5 },
+    rotate: 0,
+  },
+  hidden: { opacity: 0, scale: 0.9, y: 100 },
+};
+
 const Contact = () => {
   const [sent, setSent] = useState(false);
-  const { ref, inView } = useInView({
-    threshold: 0,
-  });
   const animation = useAnimation();
+  const animation2 = useAnimation();
+  const { ref, inView } = useInView();
+  const { ref: ref2, inView: inView2 } = useInView();
 
   useEffect(() => {
     if (inView) {
-      animation.start({
-        scale: 1,
-        opacity: 1,
-        y: 0,
-        transition: {
-          delay: 0.4,
-        },
-      });
+      animation.start("visible");
     }
     if (!inView) {
-      animation.start({
-        scale: 0.8,
-        opacity: 0,
-        y: -0,
-      });
+      animation.start("hidden");
     }
-  }, [inView, animation]);
+
+    if (inView2) {
+      animation2.start("visible");
+    }
+    if (!inView2) {
+      animation2.start("hidden");
+    }
+  }, [inView, inView2, animation]);
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -44,15 +56,50 @@ const Contact = () => {
   return (
     <section id="5" className={styles.wrapper}>
       {/* Contact */}
-      <motion.div className={styles.headlineWrap} ref={ref} animate={animation}>
-        <h5>have any questions?</h5>
-        <h2>Get in touch with us!</h2>
-        <p>
-          If you are interested in hosting a workshop, you can contact us via
-          the form below.
-        </p>
+      <motion.div
+        className={styles.headlineWrap}
+        ref={ref}
+        animate={animation}
+        initial="hidden"
+        variants={paraVariants}
+      >
+        <div className={styles.contentWrap}>
+          <div className={styles.titleWrap}>
+            <img
+              className={styles.left}
+              src="/images/heart.svg"
+              alt="heart icon"
+            />
+            <h3>GET IN TOUCH</h3>
+            <img
+              className={styles.right}
+              src="/images/heart.svg"
+              alt="heart icon"
+            />
+          </div>
+          <p>
+            We’d love to talk to you about how our workshops can help you
+            support your people, protect your business and help end the stigma
+            of gambling addiction.
+          </p>
+          <p>
+            Our workshops are tailored to your specific organisation and costs
+            depend on your individual requirements. Our team is happy to chat
+            these through with you.
+          </p>
+          <p>
+            Fill in the form below, indicating if you’d like us to call you back
+            or send more information.
+          </p>
+        </div>
       </motion.div>
-      <motion.div className={styles.grid} ref={ref} animate={animation}>
+      <motion.div
+        className={styles.grid}
+        ref={ref2}
+        animate={animation2}
+        initial="hidden"
+        variants={rowVariants}
+      >
         <div className={styles.formWrap}>
           <form
             name="contact v1"

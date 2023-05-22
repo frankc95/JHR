@@ -4,15 +4,16 @@ $secondary-color: #462522;
 .wrapper {
   text-align: center;
   margin: 0 -1em;
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
+  // overflow: hidden;
 
   @media (max-width: 768px) {
-    margin-bottom: 2rem;
+    // margin-bottom: 2rem;
   }
 
   & > div {
-    height: 100%;
-    // height: 100vh;
+    // height: 100%;
+    height: 100vh;
     width: 100vw;
   }
 
@@ -39,8 +40,10 @@ $secondary-color: #462522;
     & img {
       position: relative;
       z-index: 1;
+      height: 100%;
+      width: 100%;
       object-fit: cover;
-      object-position: top right;
+      object-position: top left;
     }
     & button {
       border: 0;

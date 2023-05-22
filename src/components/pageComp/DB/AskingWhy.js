@@ -12,17 +12,17 @@ export const AskingWhy = [
     width: "994",
     height: "864",
   },
-  {
-    id: 2,
-    title: "Why us?",
-    body: [
-      "John and Tony are planning a series of in-house workshops, aimed at reaching out to the community, to recognise the traits and pitfalls of problem gambling, the damage it can cause, and the light at the end of the tunnel. It is hoped that companies, large or small, sports associations and clubs, and other groups that could benefit from hearing personal stories and education material will be interested in hosting their Workshops. These can be tailored to suit the audience as appropriate.",
-      ,
-    ],
-    src: "/images/addiction.cycle.png",
-    bullet: "bullet0",
-    alt: "John Hartson Recovery Our Plan Image",
-    width: "1068",
-    height: "644",
-  },
+  // {
+  //   id: 2,
+  //   title: "Why us?",
+  //   body: [
+  //     "John and Tony are planning a series of in-house workshops, aimed at reaching out to the community, to recognise the traits and pitfalls of problem gambling, the damage it can cause, and the light at the end of the tunnel. It is hoped that companies, large or small, sports associations and clubs, and other groups that could benefit from hearing personal stories and education material will be interested in hosting their Workshops. These can be tailored to suit the audience as appropriate.",
+  //     ,
+  //   ],
+  //   src: "/images/addiction.cycle.png",
+  //   bullet: "bullet0",
+  //   alt: "John Hartson Recovery Our Plan Image",
+  //   width: "1068",
+  //   height: "644",
+  // },
 ];

@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "DMSans-Bold";
+  src: url("DMSans-Bold.ttf") format("DMSans-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DMSans-Italic";
+  src: url("DMSans-Italic.ttf") format("DMSans-Italic.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DMSans-Medium";
+  src: url("DMSans-Medium.ttf") format("DMSans-Medium.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DMSans-Medium";
+  src: url("DMSans-Medium.ttf") format("DMSans-Medium.ttf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DMSans-Regular";
+  src: url("DMSans-Regular.ttf") format("DMSans-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MADE Waffle Soft";
+  src: url("MADE Waffle Soft.otf") format("MADE Waffle Soft.otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

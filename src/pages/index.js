@@ -7,6 +7,7 @@ import OurMission from "../components/pageComp/OurMission";
 import OurTeam from "../components/pageComp/OurTeam";
 import Testimonials from "../components/pageComp/Testimonials";
 import Contact from "../components/pageComp/Contact";
+import TestimonialsNew from "../components/pageComp/TestimonialsNew";
 
 export default function Home() {
   return (
@@ -40,8 +41,8 @@ export default function Home() {
         <HomeComp />
         <OurMission />
         <OurTeam />
-        <Testimonials />
         <Contact />
+        <TestimonialsNew />
       </main>
     </>
   );

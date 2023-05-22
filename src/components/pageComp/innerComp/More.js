@@ -17,9 +17,7 @@ const More = () => {
         scale: 1,
         opacity: 1,
         y: 0,
-        transition: {
-          delay: 0.4,
-        },
+        transition: {},
       });
     }
     if (!inView) {
@@ -35,12 +33,7 @@ const More = () => {
       {MoreInfo.map((item) => (
         <div key={item.id} className={styles.bulletWrap}>
           <div className={styles.title}>
-            <Image
-                  src={item.src}
-                  alt="card img"
-                  width={200}
-                  height={100}
-                />
+            <Image src={item.src} alt="card img" width={200} height={100} />
           </div>
           <div className={styles.bullets}>
             {item.body.map((p, i) => (

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 import styles from "./OurMission.module.scss";
@@ -8,45 +8,124 @@ import { useInView } from "react-intersection-observer";
 import OurMissionComp from "./innerComp/OurMissionComp";
 import GamblingAddictionComp from "./innerComp/GamblingAddictionComp";
 import More from "./innerComp/More";
+import VideoComp from "./innerComp/VideoComp";
+import WorkshopComp from "./innerComp/WorkshopComp";
+import { ReactComponent as Quote } from "../../../public/images/quote.svg";
+import GamblingProblem from "./innerComp/GamblingProblem";
+
+const paraVariants = {
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+  hidden: { opacity: 0, scale: 0.8 },
+};
+
+const rowVariants = {
+  visible: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: { duration: 0.5 },
+    rotate: 0,
+  },
+  hidden: { opacity: 0, scale: 0.9, y: 100 },
+};
 
 const OurMission = () => {
-  const { ref, ref1, ref2, inView } = useInView({
-    threshold: 0,
-  });
   const animation = useAnimation();
+  const animation2 = useAnimation();
+  const { ref, inView } = useInView();
+  const { ref: ref2, inView: inView2 } = useInView();
 
   useEffect(() => {
     if (inView) {
-      animation.start({
-        scale: 1,
-        opacity: 1,
-        y: 0,
-        transition: {
-          delay: 0.4,
-        },
-      });
+      animation.start("visible");
     }
     if (!inView) {
-      animation.start({
-        scale: 0.8,
-        opacity: 0,
-        y: -50,
-      });
+      animation.start("hidden");
     }
-  }, [inView, animation]);
+
+    if (inView2) {
+      animation2.start("visible");
+    }
+    if (!inView2) {
+      animation2.start("hidden");
+    }
+  }, [inView, inView2, animation]);
 
   return (
     <>
       <section id="2" className={styles.wrapper}>
         {/* Asking Why */}
-        <motion.div ref={ref} animate={animation}>
+        <motion.div
+          ref={ref}
+          animate={animation}
+          initial="hidden"
+          variants={paraVariants}
+        >
           <div className={styles.headlineWrap}>
-            <h5>why?</h5>
-            <h2>Healthy Minds, Healthy Workplace</h2>
+            <h3>
+              <span>Unite</span> your team, <span>Tackle</span> their problems,{" "}
+              <span>Protect</span> your business.
+            </h3>
+
+            <div className={styles.quote}>
+              <img
+                className={styles.left}
+                src="/images/quote.svg"
+                alt="quote icon"
+              />
+              <h3>
+                I didn’t realise I had a problem. You never do. – John Hartson
+              </h3>
+              <img
+                className={styles.right}
+                src="/images/quote.svg"
+                alt="quote icon"
+              />
+            </div>
           </div>
         </motion.div>
-        <motion.div className={styles.grid} ref={ref} animate={animation}>
-          {AskingWhy.map((item) => (
+        <motion.div
+          className={styles.grid}
+          ref={ref2}
+          animate={animation2}
+          initial="hidden"
+          variants={rowVariants}
+        >
+          <div className={styles.backgroundWrap}>
+            <div className={styles.imgWrap}>
+              <Image
+                src={"/images/backgroundInfo.png"}
+                alt="John Hartson and Tony Marini photograph"
+                width="994"
+                height="864"
+              ></Image>
+            </div>
+            <div className={styles.contentWrap}>
+              <p className={styles.backgroundPara}>
+                Welcome to a unique workshop from one of Britain’s best known
+                sportsmen, designed to help your employees with gambling,
+                addiction and related mental health issues.
+              </p>
+              <p>
+                John Hartson went from the very top of the football world to
+                rock bottom. Now he shares his powerful and moving story of
+                gambling addiction to recovery, in an engaging workshop designed
+                to help your employees with their gambling, addiction and
+                related mental health issues.
+              </p>
+              <p>
+                Joined by specialist addiction therapist Tony Marini, our
+                workshop is the first step for you, as a business, to making
+                yourself open and available to help your people and end the
+                stigma of addiction.{" "}
+              </p>
+              <p>
+                And the first step for your employees to recognise their problem
+                and get the help they need.
+              </p>
+            </div>
+          </div>
+          {/* {AskingWhy.map((item) => (
             <div className={styles.innerGrid} key={item.id}>
               <div className={`${styles.graphic} ${item.cover}`}>
                 <Image
@@ -71,21 +150,30 @@ const OurMission = () => {
                 ))}
               </div>
             </div>
-          ))}
+          ))} */}
         </motion.div>
 
-        {/* Our Mission */}
-        <More />
+        {/* Video */}
+        <VideoComp />
+
+        {/* Workshops */}
+        <WorkshopComp />
+
+        {/* Gambling Problem */}
+        <GamblingProblem />
 
         {/* Our Mission */}
-        <OurMissionComp />
+        {/* <More /> */}
+
+        {/* Our Mission */}
+        {/* <OurMissionComp /> */}
 
         {/* Gambling Addiction */}
-        <GamblingAddictionComp />
+        {/* <GamblingAddictionComp /> */}
       </section>
 
-      <section className={styles.maxWidth}>
-        {/* Gambling Steps */}
+      {/* Gambling Steps */}
+      {/* <section className={styles.maxWidth}>
         <div className={`${styles.grid} ${styles.background}`}>
           <div className={styles.headlineWrap}>
             <h5>Recovery Steps</h5>
@@ -103,7 +191,7 @@ const OurMission = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };
