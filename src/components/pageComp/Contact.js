@@ -41,7 +41,7 @@ const Contact = () => {
     if (!inView2) {
       animation2.start("hidden");
     }
-  }, [inView, inView2, animation]);
+  }, [inView, inView2, animation, animation2]);
 
   async function handleSubmit(e) {
     e.preventDefault();

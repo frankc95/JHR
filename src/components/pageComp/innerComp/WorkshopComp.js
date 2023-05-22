@@ -74,7 +74,7 @@ const WorkshopComp = () => {
     if (!inView3) {
       animation3.start("hidden");
     }
-  }, [inView, inView2, inView3, animation]);
+  }, [inView, inView2, inView3, animation, animation2, animation3]);
 
   return (
     <>
