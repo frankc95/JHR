@@ -1,5 +1,5 @@
 [build]
-  publish = '_next'
+  publish = '.next'
   functions = './functions/'
 
 [[redirects]]
