@@ -803,19 +803,19 @@ $secondary-color: #462522;
 
   // Old
 
-  .background {
-    background-color: $primary-color;
-    background-image: url("../../../public/images/patternBG.webp");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-    color: #fff !important;
+  // .background {
+  //   background-color: $primary-color;
+  //   background-image: url("../../../public/images/patternBG.webp");
+  //   background-repeat: no-repeat;
+  //   background-position: center center;
+  //   background-size: cover;
+  //   position: relative;
+  //   color: #fff !important;
 
-    & h5 {
-      color: $secondary-color;
-    }
-  }
+  //   & h5 {
+  //     color: $secondary-color;
+  //   }
+  // }
 
   .grid {
     margin-top: 5rem !important;
