@@ -155,9 +155,26 @@ $secondary-color: #462522;
     .imgWrap {
       position: relative;
       z-index: 0;
+      &::after {
+        position: absolute;
+        content: "";
+        top: 45%;
+        left: -50%;
+        width: 200vw;
+        height: 300px;
+        z-index: -1;
+        background: rgb(246, 226, 112);
+        background: linear-gradient(
+          180deg,
+          rgba(246, 226, 112, 1) 0%,
+          rgba(255, 255, 255, 0) 60%
+        );
+      }
       & img {
         object-fit: cover;
         object-position: center;
+        border-radius: 20px;
+        overflow: hidden;
       }
       & button {
         border: 0;
