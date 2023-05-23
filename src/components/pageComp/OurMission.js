@@ -10,7 +10,6 @@ import GamblingAddictionComp from "./innerComp/GamblingAddictionComp";
 import More from "./innerComp/More";
 import VideoComp from "./innerComp/VideoComp";
 import WorkshopComp from "./innerComp/WorkshopComp";
-import { ReactComponent as Quote } from "../../../public/images/quote.svg";
 
 const paraVariants = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
