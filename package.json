@@ -6,8 +6,7 @@
     "dev": "next -p 8080",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "export": "next export"
+    "lint": "next lint"
   },
   "dependencies": {
     "@sendgrid/mail": "^7.4.7",
