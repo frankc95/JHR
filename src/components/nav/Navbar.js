@@ -40,6 +40,7 @@ const Navbar = ({ mobileMenu, setMobileMenu }) => {
       <header className={styles.header}>
         <nav className={navbar ? `${styles.nav} ${styles.active}` : styles.nav}>
           <Link
+            passHref
             href={{
               pathname: "/",
               hash: "1",

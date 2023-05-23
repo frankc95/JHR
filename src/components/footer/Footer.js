@@ -13,6 +13,7 @@ const footer = () => {
         <hr className={styles.hr} />
         <div className={styles.inner}>
           <Link
+            passHref
             href={{
               pathname: "/",
               hash: "1",
