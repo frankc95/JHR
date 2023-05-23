@@ -1,7 +1,6 @@
 [build]
-  publish = '.next/'
+  publish = '.next'
   functions = './functions/'
-
 
 [[redirects]]
   from = '/*'
