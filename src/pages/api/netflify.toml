@@ -1,8 +1,0 @@
-[build]
-  publish = ".next"
-  functions = './functions/'
-
-[[redirects]]
-  from = "/*"
-  to = "index.html"
-  status = 200
