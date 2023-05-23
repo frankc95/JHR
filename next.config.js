@@ -1,5 +1,5 @@
 const nextConfig = {
   reactStrictMode: true,
-  distDir: ".next",
+  target: "serverless",
 };
 module.exports = nextConfig;
