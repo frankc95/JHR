@@ -100,7 +100,8 @@ main {
 }
 body {
   line-height: 1;
-  & > div {
+  & > div,
+  & next-route-announcer {
     height: 0 !important;
   }
 }
