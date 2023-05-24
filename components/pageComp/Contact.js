@@ -109,7 +109,7 @@ const Contact = () => {
           <form
             name="contact v1"
             method="POST"
-            netlify-honeypot="bot-field"
+            // netlify-honeypot="bot-field"
             data-netlify="true"
             id="contactForm"
             action="/success"
