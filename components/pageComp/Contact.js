@@ -114,14 +114,14 @@ const Contact = () => {
             id="contactForm"
             action="/success"
           >
-            <label className={styles.hidden} type="hidden">
+            {/* <label className={styles.hidden} type="hidden">
               Don’t fill this out if you’re human: <input name="bot-field" />
-            </label>
+            </label> */}
             <input type="hidden" name="form-name" value="contact v1" />
             <div className={styles.double}>
               <div className={styles.single}>
                 <label htmlFor="name" className={styles.formLabel}>
-                  Name <span>*</span>
+                  Name <span>* </span>
                 </label>
                 <input
                   required
@@ -134,7 +134,7 @@ const Contact = () => {
 
               <div className={styles.single}>
                 <label htmlFor="email" className={styles.formLabel}>
-                  Email <span>*</span>
+                  Email <span>* </span>
                 </label>
                 <input
                   required
@@ -173,7 +173,7 @@ const Contact = () => {
             </div>
 
             <label htmlFor="name" className={styles.formLabel}>
-              Message <span>*</span>
+              Message <span>* </span>
             </label>
             <textarea
               required
