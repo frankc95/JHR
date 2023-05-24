@@ -10,6 +10,7 @@ import GamblingAddictionComp from "./innerComp/GamblingAddictionComp";
 import More from "./innerComp/More";
 import VideoComp from "./innerComp/VideoComp";
 import WorkshopComp from "./innerComp/WorkshopComp";
+import GamblingProblem from "./innerComp/GamblingProblem";
 
 const paraVariants = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
@@ -160,6 +161,9 @@ const OurMission = () => {
 
         {/* Workshops */}
         <WorkshopComp />
+
+        {/* Gambling Problem */}
+        <GamblingProblem />
 
         {/* Our Mission */}
         {/* <More /> */}

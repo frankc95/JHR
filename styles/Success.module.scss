@@ -1,0 +1,40 @@
+.contactSuccessWrap {
+  @import "../styles/globals.scss";
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  z-index: 0;
+  height: max-content;
+  padding: 0 2rem;
+  & * {
+    color: $secondary-color;
+    text-align: center;
+  }
+
+  & h3 {
+    font-family: $madeWaffleSoft;
+  }
+
+  .link {
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+    justify-content: center;
+
+    font-family: $madeWaffleSoft;
+    & svg {
+      transform: translateX(0rem);
+      transition: all ease-in 0.2s;
+    }
+
+    &:hover {
+      & svg {
+        transform: translateX(-0.5rem);
+        transition: all ease-in 0.2s;
+      }
+    }
+  }
+}

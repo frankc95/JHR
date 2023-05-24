@@ -23,6 +23,11 @@ $secondary-color: #462522;
         transform: rotate(-90deg);
       }
     }
+    @media (max-width: 675px) {
+      .titleWrap {
+        align-items: unset;
+      }
+    }
   }
 
   .grid {

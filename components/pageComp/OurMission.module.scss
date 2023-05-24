@@ -252,7 +252,9 @@ $secondary-color: #462522;
     }
     @media (max-width: 675px) {
       margin-top: 2rem;
+
       .titleWrap {
+        align-items: unset;
         text-align: center;
       }
     }
@@ -734,6 +736,7 @@ $secondary-color: #462522;
 
       & h3 {
         font-family: $madeWaffleSoft;
+        text-align: center;
       }
       .left {
         transform: rotate(-90deg);
