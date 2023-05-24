@@ -112,7 +112,7 @@ const Contact = () => {
             netlify-honeypot="bot-field"
             data-netlify="true"
             id="contactForm"
-            onSubmit="submit"
+            action="/pages/success"
           >
             <label className={styles.hidden} type="hidden">
               Don’t fill this out if you’re human: <input name="bot-field" />
