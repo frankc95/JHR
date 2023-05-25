@@ -84,7 +84,7 @@ const VideoComp = () => {
           </div>
 
           <p>
-            Watch out film to hear John and Tony’s stories and see how they can
+            Watch our film to hear John and Tony’s stories and see how they can
             relate to and connect with your people.
           </p>
         </div>

@@ -97,7 +97,7 @@ const GamblingProblem = () => {
           <p>
             “It is a serious, serious issue in society today. It’s causing havoc
             in households. People are splitting up, People are taking their
-            lives, people are in dire straits. <br /> All because of gambling.”
+            lives, People are in dire straits. <br /> All because of gambling.”
           </p>
           <p>
             <span>- John Hartson</span>
